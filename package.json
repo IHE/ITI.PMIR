@@ -1,0 +1,19 @@
+{
+  "name": "ihe_pmir",
+  "version": "1.2.0",
+  "canonical": "http://ihe.net/fhir",
+  "title": "IHE Patient Master Identity Registry (PMIR)",
+  "description": "Implementation Guide for IHE's PMIR Profile",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "keywords": [ "IHE", "PMIR" ],
+  "language": "en",
+  "maintainers": [
+    {
+      "name": "IHE ITI",
+      "email": "iti@ihe.net"
+    }
+  ],
+  "license": "CC0-1.0"
+}
