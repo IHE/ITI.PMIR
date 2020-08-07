@@ -18,6 +18,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:intrahealth/opencr-mockup.git master:gh-pages
+git push -f git@github.com:IHE/ITI.PMIR.git master:gh-pages
 
 cd -
