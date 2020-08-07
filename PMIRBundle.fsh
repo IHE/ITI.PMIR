@@ -59,7 +59,7 @@ Usage:            #example
 * entry[PMIRMessageHeaderEntry].resource.source.endpoint = "http://example.com/patientSource"
 * entry[PMIRMessageHeaderEntry].resource.focus = Reference(Bundle/abc)
 * entry[PMIRMessageHeaderEntry].resource.destination.endpoint = "http://example.com/patientEndpoint"
-* entry[PMIRBundleHistoryEntry].fullUrl = "http://example.come/fhir/Bundle/abc"
+* entry[PMIRBundleHistoryEntry].fullUrl = "http://example.com/fhir/Bundle/abc"
 * entry[PMIRBundleHistoryEntry].resource.resourceType = "Bundle"
 * entry[PMIRBundleHistoryEntry].resource.id = "abc"
 * entry[PMIRBundleHistoryEntry].resource.type = #history
@@ -85,7 +85,7 @@ Usage:            #example
 * entry[PMIRMessageHeaderEntry].resource.source.endpoint = "http://example.com/patientSource"
 * entry[PMIRMessageHeaderEntry].resource.focus = Reference(Bundle/a)
 * entry[PMIRMessageHeaderEntry].resource.destination.endpoint = "http://example.com/patientEndpoint"
-* entry[PMIRBundleHistoryEntry].fullUrl = "http://example.come/fhir/Bundle/a"
+* entry[PMIRBundleHistoryEntry].fullUrl = "http://example.com/fhir/Bundle/a"
 * entry[PMIRBundleHistoryEntry].resource.resourceType = "Bundle"
 * entry[PMIRBundleHistoryEntry].resource.id = "a"
 * entry[PMIRBundleHistoryEntry].resource.type = #history
@@ -156,7 +156,7 @@ Usage:            #example
 * entry[PMIRMessageHeaderEntry].resource.source.endpoint = "http://example.com/patientSource"
 * entry[PMIRMessageHeaderEntry].resource.focus = Reference(Bundle/b)
 * entry[PMIRMessageHeaderEntry].resource.destination.endpoint = "http://example.com/patientEndpoint"
-* entry[PMIRBundleHistoryEntry].fullUrl = "http://example.come/fhir/Bundle/b"
+* entry[PMIRBundleHistoryEntry].fullUrl = "http://example.com/fhir/Bundle/b"
 * entry[PMIRBundleHistoryEntry].resource.resourceType = "Bundle"
 * entry[PMIRBundleHistoryEntry].resource.id = "b"
 * entry[PMIRBundleHistoryEntry].resource.type = #history
@@ -201,7 +201,7 @@ Usage:            #example
 * entry[PMIRMessageHeaderEntry].resource.source.endpoint = "http://example.com/patientSource"
 * entry[PMIRMessageHeaderEntry].resource.focus = Reference(Bundle/c)
 * entry[PMIRMessageHeaderEntry].resource.destination.endpoint = "http://example.com/patientEndpoint"
-* entry[PMIRBundleHistoryEntry].fullUrl = "http://example.come/fhir/Bundle/c"
+* entry[PMIRBundleHistoryEntry].fullUrl = "http://example.com/fhir/Bundle/c"
 * entry[PMIRBundleHistoryEntry].resource.resourceType = "Bundle"
 * entry[PMIRBundleHistoryEntry].resource.id = "c"
 * entry[PMIRBundleHistoryEntry].resource.type = #history
