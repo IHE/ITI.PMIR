@@ -2,8 +2,8 @@
   "name": "ihe_pmir",
   "version": "1.2.0",
   "canonical": "http://ihe.net/fhir",
-  "title": "IHE Patient Master Identity Registry (PMIR)",
-  "description": "Implementation Guide for IHE's PMIR Profile",
+  "title": "Experimental: IHE Patient Master Identity Registry (PMIR)",
+  "description": "Implementation Guide for IHE's PMIR Profile.  This is experimental and not a formal publication!",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1"
   },

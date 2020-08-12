@@ -14,14 +14,14 @@ id: ihe_pmir
 canonical: http://ihe.net/fhir
 version: 1.2.0
 name: IHEPatientMasterIdentityRegistryPMIR
-title: IHE Patient Master Identity Registry (PMIR)
+title: Experimental - IHE Patient Master Identity Registry (PMIR)
 status: active
 contact:
   - name: IHE ITI
     telecom:
       - system: email
         value: iti@ihe.net
-description: Implementation Guide for IHE's PMIR Profile
+description: Implementation Guide for IHE's PMIR Profile. This is experimental and not a formal publication!
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
