@@ -1,0 +1,12 @@
+{
+  "url": "http://ihe.net/fhir/ImplementationGuide/ihe_pmir",
+  "name": "IHEPatientMasterIdentityRegistryPMIR",
+  "package-id": "ihe_pmir",
+  "ig-ver": "1.2.0",
+  "date": "Wed, 12 Aug, 2020 09:51:44 -0600",
+  "errs": 22,
+  "warnings": 6,
+  "hints": 5,
+  "version": "4.0.1",
+  "tool": "4.4.0 (3)"
+}

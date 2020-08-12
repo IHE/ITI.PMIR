@@ -1,0 +1,153 @@
+{
+  "resourceType": "Bundle",
+  "id": "IHE-PMIR-Bundle-Example-Create",
+  "meta": {
+    "profile": [
+      "http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "http://example.com/fhir/Bundle/a",
+      "resource": {
+        "resourceType": "Bundle",
+        "id": "a",
+        "type": "history",
+        "entry": [
+          {
+            "fullUrl": "urn:uuid:14298d90-b285-4c4c-8252-5d4e7bb5fdb6",
+            "resource": {
+              "resourceType": "Patient",
+              "active": true,
+              "name": [
+                {
+                  "use": "official",
+                  "family": "Riegel",
+                  "given": [
+                    "David",
+                    "A."
+                  ]
+                }
+              ],
+              "telecom": [
+                {
+                  "system": "phone",
+                  "value": "+1-734-942-9512",
+                  "use": "work"
+                },
+                {
+                  "system": "email",
+                  "value": "DavidARiegel@jourrapide.com",
+                  "use": "work"
+                }
+              ],
+              "gender": "male",
+              "birthDate": "1985-07-12",
+              "address": [
+                {
+                  "use": "home",
+                  "type": "both",
+                  "text": "4512 Bombardier Way\nRomulus, MI 48174",
+                  "line": [
+                    "4512 Bombardier Way"
+                  ],
+                  "city": "Romulus",
+                  "state": "MI",
+                  "postalCode": "48174",
+                  "country": "US"
+                }
+              ]
+            },
+            "request": {
+              "method": "POST",
+              "url": "Patient"
+            },
+            "response": {
+              "status": "201",
+              "location": "Patient/111/_history/1"
+            }
+          },
+          {
+            "fullUrl": "urn:uuid:95e1726c-9c3c-4de3-bebc-15daed6b6d34",
+            "resource": {
+              "resourceType": "Patient",
+              "active": true,
+              "name": [
+                {
+                  "use": "official",
+                  "family": "Wooten",
+                  "given": [
+                    "Lucille",
+                    "T."
+                  ]
+                }
+              ],
+              "telecom": [
+                {
+                  "system": "phone",
+                  "value": "+1-570-508-4343",
+                  "use": "work"
+                },
+                {
+                  "system": "email",
+                  "value": "LucilleTWooten@teleworm.us",
+                  "use": "work"
+                }
+              ],
+              "gender": "female",
+              "birthDate": "1971-12-14",
+              "address": [
+                {
+                  "use": "home",
+                  "type": "both",
+                  "text": "3799 High Meadow Lane\nScranton, PA 18503",
+                  "line": [
+                    "3799 High Meadow Lane"
+                  ],
+                  "city": "Scranton",
+                  "state": "PA",
+                  "postalCode": "18503",
+                  "country": "US"
+                }
+              ]
+            },
+            "request": {
+              "method": "POST",
+              "url": "Patient"
+            },
+            "response": {
+              "status": "201",
+              "location": "Patient/222/_history/1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.com/fhir/MessageHeader/2",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "2",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: 2</p><p><b>event</b>: <a href=\"urn:ihe:iti:pmir:2019:patient-feed\">urn:ihe:iti:pmir:2019:patient-feed</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://example.com/patientEndpoint\">http://example.com/patientEndpoint</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://example.com/patientSource\">http://example.com/patientSource</a></td></tr></table><p><b>focus</b>: <a href=\"#Bundle_a\">See above (Bundle/a)</a></p></div>"
+        },
+        "eventUri": "urn:ihe:iti:pmir:2019:patient-feed",
+        "destination": [
+          {
+            "endpoint": "http://example.com/patientEndpoint"
+          }
+        ],
+        "source": {
+          "endpoint": "http://example.com/patientSource"
+        },
+        "focus": [
+          {
+            "reference": "Bundle/a"
+          }
+        ]
+      }
+    }
+  ]
+}

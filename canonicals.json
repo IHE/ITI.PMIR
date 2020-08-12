@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ihe_pmir",
+    "type": "ImplementationGuide",
+    "url": "http://ihe.net/fhir/ImplementationGuide/ihe_pmir",
+    "version": "1.2.0",
+    "name": "IHEPatientMasterIdentityRegistryPMIR"
+  },
+  {
+    "id": "IHE-PMIR-Bundle",
+    "type": "StructureDefinition",
+    "url": "http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle",
+    "version": "1.2.0",
+    "name": "IHE_PMIR_Bundle"
+  },
+  {
+    "id": "IHE-PMIR-Bundle-History",
+    "type": "StructureDefinition",
+    "url": "http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History",
+    "version": "1.2.0",
+    "name": "IHE_PMIR_Bundle_History"
+  },
+  {
+    "id": "IHE-PMIR-MessageHeader",
+    "type": "StructureDefinition",
+    "url": "http://ihe.net/fhir/StructureDefinition/IHE_PMIR_MessageHeader",
+    "version": "1.2.0",
+    "name": "IHE_PMIR_MessageHeader"
+  },
+  {
+    "id": "IHE-PMIR-Subscription",
+    "type": "StructureDefinition",
+    "url": "http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription",
+    "version": "1.2.0",
+    "name": "IHE_PMIR_Subscription"
+  },
+  {
+    "id": "IHE-PMIR-Subscription-request",
+    "type": "StructureDefinition",
+    "url": "http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription_request",
+    "version": "1.2.0",
+    "name": "IHE_PMIR_Subscription_request"
+  }
+]

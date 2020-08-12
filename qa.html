@@ -1,0 +1,573 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 63, errors = 22, warn = 6, info = 5 -->
+<head>
+  <title>IHEPatientMasterIdentityRegistryPMIR : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for IHEPatientMasterIdentityRegistryPMIR</h1>
+ <p>Generated Wed Aug 12 09:51:58 MDT 2020, FHIR version 4.0.1 for ihe_pmir#1.2.0 (canonical = <a href="http://ihe.net/fhir">http://ihe.net/fhir</a> (<a href="http://ihe.net/fhir/history.html">history</a>)). See <a href="/home/lduncan/files/ihe/iti.pmir/build/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.9, which is out of date. The current version is v1.1.10 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/lduncan/files/IHE/ITI.PMIR/build/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> ihe_pmir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://ihe.net/fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>Realm rules:</td><td><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://ihe.net/fhir (Problem with package-list.json at http://ihe.net/fhir: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>63</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_ImplementationGuide-ihe_pmir"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/ImplementationGuide-ihe_pmir</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_examples_Bundle-IHE-PMIR-Bundle-Example-Create"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Create</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_examples_Bundle-IHE-PMIR-Bundle-Example-Delete"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Delete</b></a></td><td><b>5</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_examples_Bundle-IHE-PMIR-Bundle-Example-Merge"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Merge</b></a></td><td><b>5</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_examples_Bundle-IHE-PMIR-Bundle-Example-Update"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Update</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-Bundle"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-Bundle-History"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle-History</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-MessageHeader"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-MessageHeader</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-Subscription"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-Subscription-request"><b>/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription-request</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IHE-PMIR-Bundle-Example-Create.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IHE-PMIR-Bundle-Example-Delete.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IHE-PMIR-Bundle-Example-Merge.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IHE-PMIR-Bundle-Example-Update.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Create.change.history.html#3fc9edbe-2e73-4965-b488-58f3200242ea">Bundle-IHE-PMIR-Bundle-Example-Create.change.history.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Create.html#0bbade43-8187-4bd3-8b70-5b586045cd49">Bundle-IHE-PMIR-Bundle-Example-Create.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Create.json.html#c36ee9c2-c553-4a2d-9a85-91023ca1cf39">Bundle-IHE-PMIR-Bundle-Example-Create.json.html#/html/body/div/div/div/p/a at Line 361, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Create.ttl.html#7dbdebf9-1c5a-47c1-8991-a813be57ec7a">Bundle-IHE-PMIR-Bundle-Example-Create.ttl.html#/html/body/div/div/div/p/a at Line 364, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Create.xml.html#793ea1fa-5c46-4632-b8ec-da87e70d28bb">Bundle-IHE-PMIR-Bundle-Example-Create.xml.html#/html/body/div/div/div/p/a at Line 337, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.change.history.html#66758599-3444-4b29-b16f-de6c39ca2b67">Bundle-IHE-PMIR-Bundle-Example-Delete.change.history.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.html#ac2714da-6a38-4b87-893d-bf7306f38b94">Bundle-IHE-PMIR-Bundle-Example-Delete.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.json.html#6433f282-f94a-42f6-9e91-49bb8b3fb475">Bundle-IHE-PMIR-Bundle-Example-Delete.json.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.ttl.html#53c786a8-f7a0-478b-8649-1a50922b9883">Bundle-IHE-PMIR-Bundle-Example-Delete.ttl.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.xml.html#6e486b8a-46d2-4b1b-93c3-bdb95181bb90">Bundle-IHE-PMIR-Bundle-Example-Delete.xml.html#/html/body/div/div/div/p/a at Line 257, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.change.history.html#3c524b54-3fcc-4bf8-a9bf-6ac161082879">Bundle-IHE-PMIR-Bundle-Example-Merge.change.history.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.html#5b8141a4-7252-431a-b365-50f6f1de9d57">Bundle-IHE-PMIR-Bundle-Example-Merge.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.json.html#a0a90c6c-9f02-4828-b66a-f213fcae360e">Bundle-IHE-PMIR-Bundle-Example-Merge.json.html#/html/body/div/div/div/p/a at Line 278, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.ttl.html#ccae5ea2-1f0d-42a3-80c8-9247ae82ac82">Bundle-IHE-PMIR-Bundle-Example-Merge.ttl.html#/html/body/div/div/div/p/a at Line 286, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.xml.html#605367d5-8c7f-49a5-bc32-e100b40b22bc">Bundle-IHE-PMIR-Bundle-Example-Merge.xml.html#/html/body/div/div/div/p/a at Line 269, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Update.change.history.html#7ff03e4a-5df6-4007-96ba-3e4cdca89d78">Bundle-IHE-PMIR-Bundle-Example-Update.change.history.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Update.html#009303c9-c2de-4384-9b64-04d279b57b05">Bundle-IHE-PMIR-Bundle-Example-Update.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Update.json.html#69f87561-1bdf-4138-afb9-3fdc295ca4b6">Bundle-IHE-PMIR-Bundle-Example-Update.json.html#/html/body/div/div/div/p/a at Line 309, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Update.ttl.html#ac92e05c-40bb-48a5-907d-4366c8f7edbd">Bundle-IHE-PMIR-Bundle-Example-Update.ttl.html#/html/body/div/div/div/p/a at Line 316, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Bundle-IHE-PMIR-Bundle-Example-Update.xml.html#3cd53cba-b509-4350-91db-d56ae6c70b37">Bundle-IHE-PMIR-Bundle-Example-Update.xml.html#/html/body/div/div/div/p/a at Line 293, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-History-definitions.html#020d1d70-31b0-436e-8662-ffa549f70e19">StructureDefinition-IHE-PMIR-Bundle-History-definitions.html#/html/body/div/div/div/p/a at Line 959, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-History-examples.html#086ab279-b1bd-4779-9305-cbac822070a6">StructureDefinition-IHE-PMIR-Bundle-History-examples.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-History-mappings.html#d26b2476-6685-4592-8c9a-85c32c0c9453">StructureDefinition-IHE-PMIR-Bundle-History-mappings.html#/html/body/div/div/div/p/a at Line 309, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-History.html#2f3ab675-024e-45ab-896f-7dded6219aa7">StructureDefinition-IHE-PMIR-Bundle-History.html#/html/body/div/div/div/p/a at Line 801, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-History.profile.history.html#1364ab56-7d8e-436f-ae52-0ff98cfda619">StructureDefinition-IHE-PMIR-Bundle-History.profile.history.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-History.profile.json.html#c0e5c8b7-dde2-45f6-a6c0-b5d651d37d76">StructureDefinition-IHE-PMIR-Bundle-History.profile.json.html#/html/body/div/div/div/p/a at Line 3416, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-History.profile.ttl.html#5252abb6-ca2a-4831-9b11-bf28268136b2">StructureDefinition-IHE-PMIR-Bundle-History.profile.ttl.html#/html/body/div/div/div/p/a at Line 3059, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-History.profile.xml.html#dc4bf7c1-a09e-4d95-9b4d-41f43251bc47">StructureDefinition-IHE-PMIR-Bundle-History.profile.xml.html#/html/body/div/div/div/p/a at Line 3113, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-definitions.html#2f32b409-963e-4fb1-9126-521fc9e6f9b1">StructureDefinition-IHE-PMIR-Bundle-definitions.html#/html/body/div/div/div/p/a at Line 1249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-examples.html#1fa3c77d-4b2d-49e5-8d54-00679e612e64">StructureDefinition-IHE-PMIR-Bundle-examples.html#/html/body/div/div/div/p/a at Line 292, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle-mappings.html#85ca0367-6f98-42c9-9a5f-61eb5885f38a">StructureDefinition-IHE-PMIR-Bundle-mappings.html#/html/body/div/div/div/p/a at Line 346, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle.html#da8f37a4-7a3c-42a8-83f7-ca1b5141ae62">StructureDefinition-IHE-PMIR-Bundle.html#/html/body/div/div/div/p/a at Line 987, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle.profile.history.html#24c2bfb4-b399-4569-bcf0-7dac99c804ed">StructureDefinition-IHE-PMIR-Bundle.profile.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle.profile.json.html#056dae51-bd2f-4c7a-a99c-93fa4fae2e48">StructureDefinition-IHE-PMIR-Bundle.profile.json.html#/html/body/div/div/div/p/a at Line 4791, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle.profile.ttl.html#9fec0bef-7996-41f2-b819-9837ebad4dc9">StructureDefinition-IHE-PMIR-Bundle.profile.ttl.html#/html/body/div/div/div/p/a at Line 4296, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Bundle.profile.xml.html#7d2ee451-2ae2-4334-b48a-1186873a3ef0">StructureDefinition-IHE-PMIR-Bundle.profile.xml.html#/html/body/div/div/div/p/a at Line 4378, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-MessageHeader-definitions.html#5313ed4a-683f-4948-a911-dd70915bb6ef">StructureDefinition-IHE-PMIR-MessageHeader-definitions.html#/html/body/div/div/div/p/a at Line 672, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-MessageHeader-examples.html#6d5c62a8-825a-420e-bac7-76f34e3ec46f">StructureDefinition-IHE-PMIR-MessageHeader-examples.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-MessageHeader-mappings.html#3999694d-32d1-4225-9029-dd409e2f0caa">StructureDefinition-IHE-PMIR-MessageHeader-mappings.html#/html/body/div/div/div/p/a at Line 332, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-MessageHeader.html#985493d2-623d-4944-8e76-5bc66584774c">StructureDefinition-IHE-PMIR-MessageHeader.html#/html/body/div/div/div/p/a at Line 694, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-MessageHeader.profile.history.html#cf5109ac-6134-4d28-9234-971b7502b7a7">StructureDefinition-IHE-PMIR-MessageHeader.profile.history.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-MessageHeader.profile.json.html#8d87c8d4-b724-43f4-96dc-28c2cbeba50b">StructureDefinition-IHE-PMIR-MessageHeader.profile.json.html#/html/body/div/div/div/p/a at Line 2336, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-MessageHeader.profile.ttl.html#f1274c85-32f1-4a2a-840b-5023a3dd298f">StructureDefinition-IHE-PMIR-MessageHeader.profile.ttl.html#/html/body/div/div/div/p/a at Line 2083, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-MessageHeader.profile.xml.html#f6145407-a71f-427e-af2e-7874faffc2b2">StructureDefinition-IHE-PMIR-MessageHeader.profile.xml.html#/html/body/div/div/div/p/a at Line 2121, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-definitions.html#11e50d38-5f08-45c9-b879-ab349cc13253">StructureDefinition-IHE-PMIR-Subscription-definitions.html#/html/body/div/div/div/p/a at Line 527, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-examples.html#cf477e72-f5a0-42f2-8fe0-68dd2bc791f3">StructureDefinition-IHE-PMIR-Subscription-examples.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-mappings.html#4a5edd26-15d5-4270-9703-6777b03c1224">StructureDefinition-IHE-PMIR-Subscription-mappings.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-request-definitions.html#5117e259-46c5-4d47-ac98-60257fa1049e">StructureDefinition-IHE-PMIR-Subscription-request-definitions.html#/html/body/div/div/div/p/a at Line 528, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-request-examples.html#68611ca1-7421-4d89-a2fa-a1b5171582d8">StructureDefinition-IHE-PMIR-Subscription-request-examples.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-request-mappings.html#73c3e71c-1aad-43e1-923b-d12a01b6b5b4">StructureDefinition-IHE-PMIR-Subscription-request-mappings.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-request.html#7cb1fa40-6d46-43af-8470-3caca54ae548">StructureDefinition-IHE-PMIR-Subscription-request.html#/html/body/div/div/div/p/a at Line 593, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-request.profile.history.html#13f78df9-840b-4698-bd61-435bd43f0129">StructureDefinition-IHE-PMIR-Subscription-request.profile.history.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-request.profile.json.html#373b633c-c977-4d05-a059-cd93bce65a35">StructureDefinition-IHE-PMIR-Subscription-request.profile.json.html#/html/body/div/div/div/p/a at Line 1608, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-request.profile.ttl.html#6f54fcd0-5873-4984-b46a-2828081aa275">StructureDefinition-IHE-PMIR-Subscription-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 1452, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription-request.profile.xml.html#23aa1a45-462a-4a86-98f4-be14d34d9f70">StructureDefinition-IHE-PMIR-Subscription-request.profile.xml.html#/html/body/div/div/div/p/a at Line 1454, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription.html#61c9f36c-2789-4216-a0c9-f79ecc429965">StructureDefinition-IHE-PMIR-Subscription.html#/html/body/div/div/div/p/a at Line 607, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription.profile.history.html#2397fb5f-cf0a-411f-a069-4350a4504a6e">StructureDefinition-IHE-PMIR-Subscription.profile.history.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription.profile.json.html#0de66c43-b1db-4fe1-8458-5b375f23c4c7">StructureDefinition-IHE-PMIR-Subscription.profile.json.html#/html/body/div/div/div/p/a at Line 1632, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription.profile.ttl.html#6e7ea2d2-c9fd-467c-aa2c-c6b0af24df29">StructureDefinition-IHE-PMIR-Subscription.profile.ttl.html#/html/body/div/div/div/p/a at Line 1471, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE-PMIR-Subscription.profile.xml.html#67c5dead-c8fa-4063-9d7f-9c06ac69c6d0">StructureDefinition-IHE-PMIR-Subscription.profile.xml.html#/html/body/div/div/div/p/a at Line 1479, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#22886cf3-467e-4e50-88a2-cdaabbade0e2">artifacts.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#a8376e04-2153-44d4-bd76-e0cf7f7a5eda">index.html#/html/body/div/div/div/p/a at Line 175, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#2953b4e2-7f7a-45f9-8d61-47867a553a29">toc.html#/html/body/div/div/div/p/a at Line 157, column 28</a></b></td><td><b>error</b></td><td><b>The link 'iti@ihe.net' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_ImplementationGuide-ihe_pmir"> </a>
+<h2><a href="ImplementationGuide-ihe_pmir.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/ImplementationGuide-ihe_pmir.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/ihe_pmir: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide/ihe_pmir: ImplementationGuide.packageId</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value &quot;ihe_pmir&quot; is not valid</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_examples_Bundle-IHE-PMIR-Bundle-Example-Create"> </a>
+<h2><a href="Bundle-IHE-PMIR-Bundle-Example-Create.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Create.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Create: Bundle (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Create: Bundle (l1/c2)</b></td><td><b>error</b></td><td title="bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]"><b>bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Create: Bundle.entry[1] (l127/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_SliceOrder"><b>As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element &quot;entry&quot; is out of order in ordered slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Create: Bundle.entry[1].resource (l13/c27)</b></td><td><b>error</b></td><td title="Validation_BUNDLE_Message"><b>The first entry in a message must be a MessageHeader</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_examples_Bundle-IHE-PMIR-Bundle-Example-Delete"> </a>
+<h2><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Delete.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle (l1/c2)</b></td><td><b>error</b></td><td title="bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]"><b>bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[1] (l31/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_SliceOrder"><b>As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element &quot;entry&quot; is out of order in ordered slice</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[0].resource.entry[0] (l17/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History</b> <span id="sl76" class="flip" onclick="flip('l76')">Show Reasoning</span><div id="l76" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History<ul><li>Bundle.entry[0].resource.entry[0]: discriminator = true and (resource is Patient)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[0].resource (l13/c27)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History, Element 'Bundle.entry[0].resource.entry[PMIRPatientEntry]': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[1].resource.focus[0] (l41/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find matching profile for Bundle/c among choices: http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[1].resource.focus[0] (l41/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Bundle/c matching against Profilehttp://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History</b> <span id="sl79" class="flip" onclick="flip('l79')">Show Reasoning</span><div id="l79" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[0].resource.ofType(Bundle).entry[0]: This element does not match any known slicedefined_in_the_profilehttp://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History<ul><li>Bundle.entry[0].resource.ofType(Bundle).entry[0]: discriminator = true and (resource is Patient)</li></ul></li>, <li>Bundle.entry[0].resource.ofType(Bundle): Profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History, Element 'Bundle.entry[0].resource.ofType(Bundle).entry[PMIRPatientEntry]': minimum required = 1, but only found 0</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[1].resource (l13/c27)</b></td><td><b>error</b></td><td title="Validation_BUNDLE_Message"><b>The first entry in a message must be a MessageHeader</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_examples_Bundle-IHE-PMIR-Bundle-Example-Merge"> </a>
+<h2><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Merge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle (l1/c2)</b></td><td><b>error</b></td><td title="bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]"><b>bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[1] (l44/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_SliceOrder"><b>As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element &quot;entry&quot; is out of order in ordered slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[0].resource.entry[0].resource.link[0].other (l27/c20)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource &quot;http://example.com/fhir/Patient/456&quot;</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[1].resource.focus[0] (l54/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantMatchChoice"><b>Unable to find matching profile for Bundle/abc among choices: http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[1].resource.focus[0] (l54/c12)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Bundle/abc matching against Profilehttp://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History</b> <span id="sl86" class="flip" onclick="flip('l86')">Show Reasoning</span><div id="l86" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[0].resource.ofType(Bundle).entry[0].resource.link[0].other: Unable to resolve resource &quot;http://example.com/fhir/Patient/456&quot;</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[1].resource (l13/c27)</b></td><td><b>error</b></td><td title="Validation_BUNDLE_Message"><b>The first entry in a message must be a MessageHeader</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_examples_Bundle-IHE-PMIR-Bundle-Example-Update"> </a>
+<h2><a href="Bundle-IHE-PMIR-Bundle-Example-Update.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Update.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Update: Bundle (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Update: Bundle (l1/c2)</b></td><td><b>error</b></td><td title="bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]"><b>bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Update: Bundle.entry[1] (l75/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_SliceOrder"><b>As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element &quot;entry&quot; is out of order in ordered slice</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/IHE-PMIR-Bundle-Example-Update: Bundle.entry[1].resource (l13/c27)</b></td><td><b>error</b></td><td title="Validation_BUNDLE_Message"><b>The first entry in a message must be a MessageHeader</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-Bundle"> </a>
+<h2><a href="StructureDefinition-IHE-PMIR-Bundle.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: IHE-PMIR-Bundle/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE-PMIR-Bundle: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-Bundle-History"> </a>
+<h2><a href="StructureDefinition-IHE-PMIR-Bundle-History.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle-History.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: IHE-PMIR-Bundle-History/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE-PMIR-Bundle-History: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.where(url = 'http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History')</b></td><td><b>information</b></td><td title=""><b>The Implementation Guide contains no explicitly linked examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-MessageHeader"> </a>
+<h2><a href="StructureDefinition-IHE-PMIR-MessageHeader.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-MessageHeader.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: IHE-PMIR-MessageHeader/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_MessageHeader</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE-PMIR-MessageHeader: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition.where(url = 'http://ihe.net/fhir/StructureDefinition/IHE_PMIR_MessageHeader')</b></td><td><b>information</b></td><td title=""><b>The Implementation Guide contains no explicitly linked examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-Subscription"> </a>
+<h2><a href="StructureDefinition-IHE-PMIR-Subscription.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: IHE-PMIR-Subscription/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE-PMIR-Subscription: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_lduncan_files_IHE_ITI.PMIR_build_input_profiles_StructureDefinition-IHE-PMIR-Subscription-request"> </a>
+<h2><a href="StructureDefinition-IHE-PMIR-Subscription-request.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription-request.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: IHE-PMIR-Subscription-request/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription_request</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE-PMIR-Subscription-request: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription_request')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE-PMIR-Bundle.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle.json</a></td><td><b>Resource id/url mismatch: IHE-PMIR-Bundle/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE-PMIR-Bundle-History.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle-History.json</a></td><td><b>Resource id/url mismatch: IHE-PMIR-Bundle-History/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE-PMIR-MessageHeader.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-MessageHeader.json</a></td><td><b>Resource id/url mismatch: IHE-PMIR-MessageHeader/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_MessageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE-PMIR-Subscription.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription.json</a></td><td><b>Resource id/url mismatch: IHE-PMIR-Subscription/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE-PMIR-Subscription-request.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription-request.json</a></td><td><b>Resource id/url mismatch: IHE-PMIR-Subscription-request/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription_request</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantMatchChoice"> </a>
+<h2>Reference_REF_CantMatchChoice</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Delete.json</a></td><td><b>Unable to find matching profile for Bundle/c among choices: http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Merge.json</a></td><td><b>Unable to find matching profile for Bundle/abc among choices: http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Merge.json</a></td><td><b>Unable to resolve resource &quot;http://example.com/fhir/Patient/456&quot;</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_ID_Valid"> </a>
+<h2>Type_Specific_Checks_DT_ID_Valid</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-ihe_pmir.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/ImplementationGuide-ihe_pmir.json</a></td><td><b>id value &quot;ihe_pmir&quot; is not valid</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_BUNDLE_Message"> </a>
+<h2>Validation_BUNDLE_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Create.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Create.json</a></td><td><b>The first entry in a message must be a MessageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Delete.json</a></td><td><b>The first entry in a message must be a MessageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Merge.json</a></td><td><b>The first entry in a message must be a MessageHeader</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Update.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Update.json</a></td><td><b>The first entry in a message must be a MessageHeader</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum"> </a>
+<h2>Validation_VAL_Profile_Minimum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Delete.json</a></td><td><b>Profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History, Element 'Bundle.entry[0].resource.entry[PMIRPatientEntry]': minimum required = 1, but only found 0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_SliceOrder"> </a>
+<h2>Validation_VAL_Profile_SliceOrder</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Create.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Create.json</a></td><td><b>As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element &quot;entry&quot; is out of order in ordered slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Delete.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Delete.json</a></td><td><b>As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element &quot;entry&quot; is out of order in ordered slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Merge.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Merge.json</a></td><td><b>As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element &quot;entry&quot; is out of order in ordered slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-IHE-PMIR-Bundle-Example-Update.html">/home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Update.json</a></td><td><b>As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element &quot;entry&quot; is out of order in ordered slice</b></td>
+   </tr>
+</table>
+</body>
+</html>

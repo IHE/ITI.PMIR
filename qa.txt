@@ -1,0 +1,136 @@
+﻿IHEPatientMasterIdentityRegistryPMIR : Validation Results
+=========================================
+
+err = 22, warn = 6, info = 5
+IG Publisher Version: 1.1.9 Out of date - current version is 1.1.10
+Generated Wed Aug 12 09:51:58 MDT 2020. FHIR version 4.0.1 for ihe_pmir#1.2.0 (canonical = http://ihe.net/fhir)
+
+ Build Errors : 63 / 4 / 0
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/ImplementationGuide-ihe_pmir : 1 / 0 / 1
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Create : 3 / 0 / 1
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Delete : 5 / 0 / 3
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Merge : 5 / 0 / 2
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Update : 3 / 0 / 1
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle : 1 / 0 / 1
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle-History : 1 / 0 / 2
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-MessageHeader : 1 / 0 / 2
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription : 1 / 1 / 1
+ /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription-request : 1 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IHE-PMIR-Bundle-Example-Create.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IHE-PMIR-Bundle-Example-Delete.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IHE-PMIR-Bundle-Example-Merge.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/IHE-PMIR-Bundle-Example-Update.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Create.change.history.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Create.html#/html/body/div/div/div/p/a at Line 206, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Create.json.html#/html/body/div/div/div/p/a at Line 361, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Create.ttl.html#/html/body/div/div/div/p/a at Line 364, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Create.xml.html#/html/body/div/div/div/p/a at Line 337, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Delete.change.history.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Delete.html#/html/body/div/div/div/p/a at Line 206, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Delete.json.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Delete.ttl.html#/html/body/div/div/div/p/a at Line 274, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Delete.xml.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Merge.change.history.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Merge.html#/html/body/div/div/div/p/a at Line 206, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Merge.json.html#/html/body/div/div/div/p/a at Line 278, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Merge.ttl.html#/html/body/div/div/div/p/a at Line 286, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Merge.xml.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Update.change.history.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Update.html#/html/body/div/div/div/p/a at Line 206, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Update.json.html#/html/body/div/div/div/p/a at Line 309, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Update.ttl.html#/html/body/div/div/div/p/a at Line 316, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/Bundle-IHE-PMIR-Bundle-Example-Update.xml.html#/html/body/div/div/div/p/a at Line 293, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-History-definitions.html#/html/body/div/div/div/p/a at Line 959, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-History-examples.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-History-mappings.html#/html/body/div/div/div/p/a at Line 309, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-History.html#/html/body/div/div/div/p/a at Line 801, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-History.profile.history.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-History.profile.json.html#/html/body/div/div/div/p/a at Line 3416, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-History.profile.ttl.html#/html/body/div/div/div/p/a at Line 3059, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-History.profile.xml.html#/html/body/div/div/div/p/a at Line 3113, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-definitions.html#/html/body/div/div/div/p/a at Line 1249, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-examples.html#/html/body/div/div/div/p/a at Line 292, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle-mappings.html#/html/body/div/div/div/p/a at Line 346, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle.html#/html/body/div/div/div/p/a at Line 987, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle.profile.history.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle.profile.json.html#/html/body/div/div/div/p/a at Line 4791, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle.profile.ttl.html#/html/body/div/div/div/p/a at Line 4296, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Bundle.profile.xml.html#/html/body/div/div/div/p/a at Line 4378, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-MessageHeader-definitions.html#/html/body/div/div/div/p/a at Line 672, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-MessageHeader-examples.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-MessageHeader-mappings.html#/html/body/div/div/div/p/a at Line 332, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-MessageHeader.html#/html/body/div/div/div/p/a at Line 694, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-MessageHeader.profile.history.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-MessageHeader.profile.json.html#/html/body/div/div/div/p/a at Line 2336, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-MessageHeader.profile.ttl.html#/html/body/div/div/div/p/a at Line 2083, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-MessageHeader.profile.xml.html#/html/body/div/div/div/p/a at Line 2121, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-definitions.html#/html/body/div/div/div/p/a at Line 527, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-examples.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-mappings.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-request-definitions.html#/html/body/div/div/div/p/a at Line 528, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-request-examples.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-request-mappings.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-request.html#/html/body/div/div/div/p/a at Line 593, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-request.profile.history.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-request.profile.json.html#/html/body/div/div/div/p/a at Line 1608, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 1452, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription-request.profile.xml.html#/html/body/div/div/div/p/a at Line 1454, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription.html#/html/body/div/div/div/p/a at Line 607, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription.profile.history.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription.profile.json.html#/html/body/div/div/div/p/a at Line 1632, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription.profile.ttl.html#/html/body/div/div/div/p/a at Line 1471, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/StructureDefinition-IHE-PMIR-Subscription.profile.xml.html#/html/body/div/div/div/p/a at Line 1479, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/artifacts.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/index.html#/html/body/div/div/div/p/a at Line 175, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+ERROR: /home/lduncan/files/IHE/ITI.PMIR/build/output/toc.html#/html/body/div/div/div/p/a at Line 157, column 28: The link 'iti@ihe.net' for "" cannot be resolved
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/ImplementationGuide-ihe_pmir.json ==
+INFORMATION: ImplementationGuide/ihe_pmir: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+ERROR: ImplementationGuide/ihe_pmir: ImplementationGuide.packageId: id value "ihe_pmir" is not valid
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Create.json ==
+INFORMATION: Bundle/IHE-PMIR-Bundle-Example-Create: Bundle: Validate resource against profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Create: Bundle: bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Create: Bundle.entry[1]: As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element "entry" is out of order in ordered slice
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Create: Bundle.entry[1].resource: The first entry in a message must be a MessageHeader
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Delete.json ==
+INFORMATION: Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle: Validate resource against profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle: bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[1]: As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element "entry" is out of order in ordered slice
+INFORMATION: Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[0].resource.entry[0]: This element does not match any known slice defined in the profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[0].resource: Profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History, Element 'Bundle.entry[0].resource.entry[PMIRPatientEntry]': minimum required = 1, but only found 0
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[1].resource.focus[0]: Unable to find matching profile for Bundle/c among choices: http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History
+INFORMATION: Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[1].resource.focus[0]: Details for Bundle/c matching against Profilehttp://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Delete: Bundle.entry[1].resource: The first entry in a message must be a MessageHeader
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Merge.json ==
+INFORMATION: Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle: Validate resource against profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle: bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[1]: As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element "entry" is out of order in ordered slice
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[0].resource.entry[0].resource.link[0].other: Unable to resolve resource "http://example.com/fhir/Patient/456"
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[1].resource.focus[0]: Unable to find matching profile for Bundle/abc among choices: http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History
+INFORMATION: Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[1].resource.focus[0]: Details for Bundle/abc matching against Profilehttp://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Merge: Bundle.entry[1].resource: The first entry in a message must be a MessageHeader
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/examples/Bundle-IHE-PMIR-Bundle-Example-Update.json ==
+INFORMATION: Bundle/IHE-PMIR-Bundle-Example-Update: Bundle: Validate resource against profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Update: Bundle: bdl-12: A message must have a MessageHeader as the first resource [(type = 'message') implies entry.first().resource.is(MessageHeader)]
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Update: Bundle.entry[1]: As specified by profile http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle, Element "entry" is out of order in ordered slice
+ERROR: Bundle/IHE-PMIR-Bundle-Example-Update: Bundle.entry[1].resource: The first entry in a message must be a MessageHeader
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: IHE-PMIR-Bundle/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle
+INFORMATION: StructureDefinition/IHE-PMIR-Bundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Bundle-History.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: IHE-PMIR-Bundle-History/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History
+INFORMATION: StructureDefinition/IHE-PMIR-Bundle-History: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition.where(url = 'http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle_History'): The Implementation Guide contains no explicitly linked examples for this profile
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-MessageHeader.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: IHE-PMIR-MessageHeader/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_MessageHeader
+INFORMATION: StructureDefinition/IHE-PMIR-MessageHeader: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition.where(url = 'http://ihe.net/fhir/StructureDefinition/IHE_PMIR_MessageHeader'): The Implementation Guide contains no explicitly linked examples for this profile
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: IHE-PMIR-Subscription/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription
+INFORMATION: StructureDefinition/IHE-PMIR-Subscription: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription'): The Implementation Guide contains no examples for this profile
+== /home/lduncan/files/IHE/ITI.PMIR/build/input/profiles/StructureDefinition-IHE-PMIR-Subscription-request.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: IHE-PMIR-Subscription-request/http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription_request
+INFORMATION: StructureDefinition/IHE-PMIR-Subscription-request: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Subscription_request'): The Implementation Guide contains no examples for this profile

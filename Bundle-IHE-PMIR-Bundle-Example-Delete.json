@@ -1,0 +1,57 @@
+{
+  "resourceType": "Bundle",
+  "id": "IHE-PMIR-Bundle-Example-Delete",
+  "meta": {
+    "profile": [
+      "http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "fullUrl": "http://example.com/fhir/Bundle/c",
+      "resource": {
+        "resourceType": "Bundle",
+        "id": "c",
+        "type": "history",
+        "entry": [
+          {
+            "fullUrl": "http://example.com/fhir/Patient/111",
+            "request": {
+              "method": "DELETE",
+              "url": "Patient/111"
+            },
+            "response": {
+              "status": "202"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.com/fhir/MessageHeader/4",
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "4",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: 4</p><p><b>event</b>: <a href=\"urn:ihe:iti:pmir:2019:patient-feed\">urn:ihe:iti:pmir:2019:patient-feed</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://example.com/patientEndpoint\">http://example.com/patientEndpoint</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://example.com/patientSource\">http://example.com/patientSource</a></td></tr></table><p><b>focus</b>: <a href=\"#Bundle_c\">See above (Bundle/c)</a></p></div>"
+        },
+        "eventUri": "urn:ihe:iti:pmir:2019:patient-feed",
+        "destination": [
+          {
+            "endpoint": "http://example.com/patientEndpoint"
+          }
+        ],
+        "source": {
+          "endpoint": "http://example.com/patientSource"
+        },
+        "focus": [
+          {
+            "reference": "Bundle/c"
+          }
+        ]
+      }
+    }
+  ]
+}

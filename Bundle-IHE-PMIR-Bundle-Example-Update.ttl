@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ihe.net/fhir/Bundle/IHE-PMIR-Bundle-Example-Update> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "IHE-PMIR-Bundle-Example-Update"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle";
+       fhir:index 0;
+       fhir:link <http://ihe.net/fhir/StructureDefinition/IHE_PMIR_Bundle>
+     ]
+  ];
+  fhir:Bundle.type [ fhir:value "message"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.com/fhir/Bundle/b" ];
+     fhir:Bundle.entry.resource <http://example.com/fhir/Bundle/b>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.com/fhir/MessageHeader/3" ];
+     fhir:Bundle.entry.resource <http://example.com/fhir/MessageHeader/3>
+  ] .
+
+<http://example.com/fhir/Bundle/b> a fhir:Bundle;
+  fhir:Resource.id [ fhir:value "b"];
+  fhir:Bundle.type [ fhir:value "history"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://example.com/fhir/Patient/111" ];
+     fhir:Bundle.entry.resource <http://example.com/fhir/Patient/111>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Patient/111" ]
+     ];
+     fhir:Bundle.entry.response [
+       fhir:Bundle.entry.response.status [ fhir:value "200" ];
+       fhir:Bundle.entry.response.location [ fhir:value "Patient/111/_history/2" ]
+     ]
+  ] .
+
+<http://example.com/fhir/Patient/111> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "111"];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "Riegel" ];
+     fhir:HumanName.given [
+       fhir:value "David";
+       fhir:index 0
+     ], [
+       fhir:value "A.";
+       fhir:index 1
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+1-812-863-3613" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "DavidARiegel@jourrapide.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1985-07-12"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.text [ fhir:value "4392 Stratford Park\nOwensburg, IN 47453" ];
+     fhir:Address.line [
+       fhir:value "4392 Stratford Park";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Owensburg" ];
+     fhir:Address.state [ fhir:value "IN" ];
+     fhir:Address.postalCode [ fhir:value "47453" ];
+     fhir:Address.country [ fhir:value "US" ]
+  ] .
+
+<http://example.com/fhir/MessageHeader/3> a fhir:MessageHeader;
+  fhir:Resource.id [ fhir:value "3"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>id</b>: 3</p><p><b>event</b>: <a href=\"urn:ihe:iti:pmir:2019:patient-feed\">urn:ihe:iti:pmir:2019:patient-feed</a></p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://example.com/patientEndpoint\">http://example.com/patientEndpoint</a></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"http://example.com/patientSource\">http://example.com/patientSource</a></td></tr></table><p><b>focus</b>: <a href=\"#Bundle_b\">See above (Bundle/b)</a></p></div>"
+  ];
+  fhir:MessageHeader.eventUri [ fhir:value "urn:ihe:iti:pmir:2019:patient-feed"];
+  fhir:MessageHeader.destination [
+     fhir:index 0;
+     fhir:MessageHeader.destination.endpoint [ fhir:value "http://example.com/patientEndpoint" ]
+  ];
+  fhir:MessageHeader.source [
+     fhir:MessageHeader.source.endpoint [ fhir:value "http://example.com/patientSource" ]
+  ];
+  fhir:MessageHeader.focus [
+     fhir:index 0;
+     fhir:link <http://ihe.net/fhir/Bundle/b>;
+     fhir:Reference.reference [ fhir:value "Bundle/b" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ihe.net/fhir/Bundle/IHE-PMIR-Bundle-Example-Update.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
