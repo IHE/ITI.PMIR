@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.Bundle"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2021-03-03T18:51:42.237+01:00"/>
+  <entry>
+    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir//MessageHeader/070b3907-883b-4f20-af66-88a5db6b73ad"/>
+    <resource>
+      <MessageHeader xmlns="http://hl7.org/fhir">
+        <meta>
+          <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.MessageHeader"/>
+        </meta>
+        <eventUri value="urn:ihe:iti:pmir:2019:patient-feed"/>
+        <destination>
+          <target>
+            <identifier>
+              <system value="urn:ietf:rfc:3986"/>
+              <value value="urn:oid:1.3.6.1.4.1.21367.13.30.361"/>
+            </identifier>
+          </target>
+          <endpoint value="urn:oid:1.3.6.1.4.1.21367.13.50.300297"/>
+          <receiver>
+            <identifier>
+              <system value="urn:ietf:rfc:3986"/>
+              <value value="urn:oid:1.3.6.1.4.1.21367.13.50.300297"/>
+            </identifier>
+          </receiver>
+        </destination>
+        <source>
+          <name value="EHR_TIANI-SPIRIT"/>
+          <endpoint value="urn:oid:1.3.6.1.4.1.21367.13.10.345"/>
+        </source>
+        <focus>
+          <reference value="Bundle/070b3907-883b-4f20-af66-88a5db6b73ad"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir//Bundle/070b3907-883b-4f20-af66-88a5db6b73ad"/>
+    <resource>
+      <Bundle xmlns="http://hl7.org/fhir">
+        <id value="070b3907-883b-4f20-af66-88a5db6b73ad"/>
+        <meta>
+          <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.BundleHistory"/>
+        </meta>
+        <type value="history"/>
+        <entry>
+          <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+              <identifier>
+                <system value="urn:oid:1.3.6.1.4.1.21367.13.20.308"/>
+                <value value="Mother"/>
+              </identifier>
+              <active value="true"/>
+              <name>
+                <family value="Tiani-Spirit"/>
+                <given value="Mother"/>
+              </name>
+              <gender value="female"/>
+              <birthDate value="1985-06-04"/>
+            </Patient>
+          </resource>
+          <request>
+            <method value="POST"/>
+            <url value="Patient/110fd932-7368-4d2a-acbd-1f5d28bf95d6"/>
+          </request>
+          <response>
+            <status value="200"/>
+          </response>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>

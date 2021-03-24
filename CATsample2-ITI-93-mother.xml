@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="d0bceb02-ddc1-4855-98a0-00bc364f24eb"/>
+  <type value="message"/>
+  <timestamp value="2021-03-03T12:51:45.5268783-05:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:58bcd46a-d810-4003-82c4-98b8a9fdf8c3"/>
+    <resource>
+      <MessageHeader>
+        <id value="58bcd46a-d810-4003-82c4-98b8a9fdf8c3"/>
+        <eventUri value="urn:ihe:iti:pmir:2019:patient-feed"/>
+        <source>
+          <endpoint value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir"/>
+        </source>
+        <response>
+          <code value="ok"/>
+        </response>
+        <focus>
+          <reference value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Patient/8f33f71d-497c-eb11-95e7-d067e54cbc0c"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:400cccd5-1fc1-4d88-83f0-f90077f1ec1b"/>
+    <resource>
+      <Bundle>
+        <id value="8f52a376-d6d2-46ab-a810-c4233bd46c69"/>
+        <type value="history"/>
+        <timestamp value="2021-03-03T12:51:45.5288783-05:00"/>
+        <entry>
+          <fullUrl value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Patient/8f33f71d-497c-eb11-95e7-d067e54cbc0c"/>
+          <resource>
+            <Patient>
+              <id value="8f33f71d-497c-eb11-95e7-d067e54cbc0c"/>
+              <meta>
+                <lastUpdated value="2021-03-03T12:51:45.173-05:00"/>
+              </meta>
+              <identifier>
+                <use value="usual"/>
+                <system value="urn:oid:1.3.6.1.4.1.21367.13.20.308"/>
+                <value value="Mother"/>
+                <assigner>
+                  <display value="TIE5"/>
+                </assigner>
+              </identifier>
+              <active value="true"/>
+              <name>
+                <use value="official"/>
+                <family value="TIANI-SPIRIT"/>
+                <given value="MOTHER"/>
+              </name>
+              <gender value="female"/>
+              <birthDate value="1985-06-04"/>
+            </Patient>
+          </resource>
+          <request>
+            <method value="POST"/>
+            <url value="Patient/110fd932-7368-4d2a-acbd-1f5d28bf95d6"/>
+          </request>
+          <response>
+            <status value="201"/>
+            <location value="Patient/8f33f71d-497c-eb11-95e7-d067e54cbc0c"/>
+          </response>
+        </entry>
+      </Bundle>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.RelatedPerson"/>
+  </meta>
+  <identifier>
+    <system value="urn:oid:1.3.6.1.4.1.21367.13.20.308"/>
+    <value value="Child"/>
+  </identifier>
+  <patient>
+    <identifier>
+      <system value="urn:oid:1.3.6.1.4.1.21367.13.20.308"/>
+      <value value="Mother"/>
+    </identifier>
+  </patient>
+  <relationship>
+    <coding>
+      <code value="CHILD"/>
+    </coding>
+  </relationship>
+</RelatedPerson>
