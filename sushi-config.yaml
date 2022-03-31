@@ -1,0 +1,93 @@
+# sushi-config.yaml is documented https://fshschool.org/docs/sushi/configuration/
+# ───────────────────────────────────────────────────
+# the id should be lowercase made up of "ihe." + {domain acronym} + "." + {profile acronym/short-name}
+# e.g. ihe.iti.mhds, or ihe.iti.basicaudit
+id: ihe.iti.pmir
+canonical: https://profiles.ihe.net/ITI/PMIR
+version: 1.3.0
+name: IHE_ITI_PMIR
+title: "Patient Master Identity Registry (PMIR)"
+description: "The Patient Master Identity Registry (PMIR) Profile supports the creating, updating and deprecating of patient master identity information about a subject of care, as well as subscribing to changes to the patient master identity, using the HL7 FHIR standard resources and RESTful transactions."
+releaseLabel: ci-build
+#releaseLabel: Trial-Implementation
+date: 2020-12-11
+status: active
+publisher:
+  - name: IHE IT Infrastructure Technical Committee
+  - url: https://www.ihe.net/ihe_domains/it_infrastructure/
+  - email: iti@ihe.net
+contact:
+  - name: IHE IT Infrastructure Technical Committee
+    telecom:
+      - system: email
+        value: iti@ihe.net
+license:  CC-BY-SA-4.0
+fhirVersion: 4.0.1
+jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
+copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
+copyrightYear: 2020+
+
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+    - input/examples
+#  path-pages:
+#    - input/pagecontent
+#    - fsh-generated/includes
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'false'
+  logging: progress
+  shownav: 'true'
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+
+resources:
+# list every example here with a name, description and that exampleBoolean is true; These are used to populate the artifacts page, and are needed to eliminate build warnings 
+# You may delay filling out this section until you approach publication as it is merely a nice to have and eliminates build warnings -- If you do this then you will need above the autoload-resources true
+
+
+pages:
+# itemize here each narrative page. Include assigned section numbers when appropriate
+  index.md:
+    title: 1:49 Patient Master Identity Registry (PMIR) Profile
+    generation: markdown
+  volume-1.md:
+    title: 1:49 Patient Master Identity Registry (PMIR) Profile Volume 1
+    generation: markdown
+  ITI-93.md:
+    title: 2:3.93 Mobile Patient Identity Feed [ITI-93]
+    generation: markdown
+  ITI-94.md:
+    title: 2:3.94 Subscribe to Patient Updates [ITI-94]
+    generation: markdown
+  testplan.md:
+    title: "Test Plan"
+    generation: markdown
+  issues.md:
+    title: Open and Closed issues
+    generation: markdown
+  other.md:
+    title: Changes to Other Documents
+    generation: markdown
+
+menu:
+  PMIR Home: index.html
+  Volume 1:
+    Introduction: volume-1.html
+    Actors and Transactions: volume-1.html#1491-pmir-actors-transactions-and-content-modules
+    Actor Options: volume-1.html#1492-pmir-actor-options
+    Required Groupings: volume-1.html#1493-pmir-required-actor-groupings
+    Overview: volume-1.html#1494-pmir-overview
+    Security Considerations: volume-1.html#1495-pmir-security-considerations
+    Cross-Profile Considerations: volume-1.html#1496-pmir-cross-profile-considerations
+  Volume 2:
+    "Mobile Patient Identity Feed [ITI-93]": ITI-93.html
+    "Subscribe to Patient Updates [ITI-94]": ITI-94.html
+  Test Plan: testplan.html
+  Other: other.html
+  Artifacts: artifacts.html

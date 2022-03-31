@@ -1,1 +1,13 @@
 build/**
+
+/input/images/Thumbs.db
+temp
+template
+output
+input-cache
+fsh-generated
+www
+
+# macos
+.DS_Store
+

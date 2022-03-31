@@ -1,0 +1,41 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+
+participant Joshua
+participant EMR
+participant LAB
+participant CR
+participant SHR
+participant "Patient Identity Subscriber" as Subscriber
+
+Note over EMR,SHR: Subscriptions are created
+
+Subscriber->CR: Subscribe LAB to Patient Updates [ITI-94]
+Subscriber->CR: Subscribe SHR to Patient Updates [ITI-94]
+CR->CR: Activate Subscriptions and update status
+
+Note over Joshua,SHR: Health information has been saved under Joshua's ID#-1
+
+EMR->EMR: New demographic record is created\nfor Joshua with incorrect information about his\naddress and mobile phone number
+EMR->CR: Create Joshua's duplicate demographic record (ID#-2) on the national CR [ITI-93]
+EMR->EMR: Joshua's HIV+ rapid test result saved against ID#-2
+LAB->LAB: Joshua's confirmatory HIV+ test result saved against ID#-2
+
+LAB->SHR: CREATE lab test record of HIV+ confirmatory test indexed by ID#-2
+
+Note over Joshua,SHR: Health information has been saved under Joshua's ID#-1 and under the duplicate ID#-2
+
+EMR->EMR: Deactivate duplicate record and link to the correct record.
+EMR->CR: Link ID#-2 with ID#-1 and deactivate ID#-2 [ITI-93]
+
+Note over CR: Invoke Subscriptions
+
+CR->LAB: Mobile Patient Identity Feed [ITI-93] of patient-link
+LAB->LAB: Link ID#-2 with ID#-1
+CR->SHR: Mobile Patient Identity Feed [ITI-93] of patient-link
+SHR->SHR: Link ID#-2 with ID#-1
+
+Note over Joshua,SHR: All health information about Joshua is indexed under ID#-1
+
+@enduml

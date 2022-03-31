@@ -1,0 +1,19 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+
+participant Joshua
+participant EMR
+participant CR
+
+Note over Joshua: Joshua moves to the city
+
+EMR->CR: Search for existing records matching Joshua's demographics [ITI-78]
+CR->EMR: Return Matching Record [ITI-78]
+EMR->EMR: Demographic record created for Joshua\nbased on "master" demographic record including\nupdated information about his new address and\nmobile phone number
+EMR->CR: UPDATE Joshua's demographic record on the national Client Registry [ITI-93]
+CR->CR: Update "master" demographic record for Joshua
+
+Note over CR: Invoke feed to subscribers
+
+@enduml

@@ -1,0 +1,23 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+
+participant Joshua
+participant EMR
+participant CR
+participant CRVS
+
+Note over Joshua: Joshua is born
+
+EMR->EMR: Demographic record established for Joshua\nincluding information about his relationship to his parents
+EMR->CR: CREATE Joshua's demographic record\non the national Client Registry [ITI-93]
+CR->CR: Establish "master" demographic record for Joshua
+
+Note over CR: Invoke feed
+
+CR->CRVS: CREATE Joshua's administrative record on the\nnational Civil Registration and Vital Statistics database [ITI-93]
+CRVS->CRVS: Establish administrative birth record for Joshua
+CR->Joshua: Health Card
+CRVS->Joshua: Birth Certificate
+
+@enduml

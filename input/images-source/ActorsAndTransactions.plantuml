@@ -1,0 +1,18 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+
+agent "Patient Identity Source" as Source
+agent "Patient Identity Registry" as Registry
+agent "Patient Identity Subscriber" as Subscriber
+agent "Patient Identity Consumer" as Consumer
+agent "Patient Demographics Consumer" as PDQ
+agent "Patient Identifier Cross-reference Consumer" as PIX
+
+Source --> Registry : "Mobile Patient Identity Feed [ITI-93]"
+Registry <-- Subscriber : "Subscribe to Patient Updates [ITI-94]"
+Registry -> Consumer : "Mobile Patient Identity Feed [ITI-93]"
+PDQ -[hidden]-> PIX
+PDQ -> Registry : "Mobile Patient Demographics Query [ITI-78]"
+PIX -> Registry : "Mobile Patient Identifier Cross-reference Query [ITI-83]"
+@enduml

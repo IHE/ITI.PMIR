@@ -2,8 +2,9 @@
 
 <Bundle xmlns="http://hl7.org/fhir">
   <meta>
-    <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.Bundle"/>
+    <profile value="https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Bundle"/>
   </meta>
+  <id value="d97b9e33-4b48-4190-8622-0b4b5be9770d"/>
   <type value="message"/>
   <timestamp value="2021-03-04T20:05:16.354+01:00"/>
   <entry>

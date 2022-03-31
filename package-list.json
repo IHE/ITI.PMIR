@@ -1,0 +1,14 @@
+{
+ "package-id" : "ihe.iti.pmir",
+ "title" : "Patient Master Identity Registry (PMIR)", 
+ "canonical" : "https://profiles.ihe.net/ITI/PMIR", 
+ "introduction" : "The Patient Master Identity Registry (PMIR) Profile supports the creating, updating and deprecating of patient master identity information about a subject of care, as well as subscribing to changes to the patient master identity, using the HL7 FHIR standard resources and RESTful transactions.",
+ "category": "Administration",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "http://build.fhir.org/ig/IHE/ITI.PMIR/branches/main",
+  "status" : "ci-build",
+  "current" : true
+ }]
+}

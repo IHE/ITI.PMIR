@@ -2,8 +2,9 @@
 
 <RelatedPerson xmlns="http://hl7.org/fhir">
   <meta>
-    <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.RelatedPerson"/>
+    <profile value="https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.RelatedPerson"/>
   </meta>
+  <id value="bf7c8e34-1be8-4b67-aad7-d62d8da48065"/>
   <identifier>
     <system value="urn:oid:1.3.6.1.4.1.21367.13.20.308"/>
     <value value="Child"/>

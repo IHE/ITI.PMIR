@@ -1,0 +1,11 @@
+@startuml
+hide footbox
+participant "Supplier" as Client
+participant "Consumer" as Server
+activate Client
+activate Server
+Client -> Server : 1. Mobile Patient Identity Feed Request [ITI-93]
+Server -> Client : 2. Mobile Patient Identity Feed Response [ITI-93]
+deactivate Client
+deactivate Server
+@enduml

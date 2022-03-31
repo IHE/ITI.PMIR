@@ -1,0 +1,41 @@
+@startuml
+hide footbox
+participant "Patient Identity Subscriber" as Client
+participant "Patient Identity Registry" as Server
+
+activate Client
+activate Server
+
+Client -> Server : Subscribe to Patient Updates Request
+Server -> Client : Subscribe to Patient Updates Response
+
+deactivate Client
+deactivate Server
+Client -[hidden]> Server
+activate Client
+activate Server
+
+Client -> Server : Get Patient Subscription Request
+Server -> Client : Get Patient Subscription Response
+
+deactivate Client
+deactivate Server
+Client -[hidden]> Server
+activate Client
+activate Server
+
+Client -> Server : Enable/Disable Patient Subscription Request
+Server -> Client : Enable/Disable Patient Subscription Response
+
+deactivate Client
+deactivate Server
+Client -[hidden]> Server
+activate Client
+activate Server
+
+Client -> Server : Delete Patient Subscription Request
+Server -> Client : Delete Patient Subscription Response
+
+deactivate Client
+deactivate Server
+@enduml
