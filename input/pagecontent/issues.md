@@ -3,6 +3,8 @@
 - Removed inline UML text and moved it to images-source/
 - Removed constraint tables for link to profiled resource page.
 - Removed inline example and linked to current examples.
+- Added in MessageDefinition resources
+- Added in CapabilityStatement resources
 
 ## Issues
 
