@@ -64,7 +64,8 @@ A Supplier initiates a FHIR message request using HTTP POST as defined
 at <https://www.hl7.org/fhir/R4/messaging.html> on a Bundle Resource.
 
 A Supplier shall create a Bundle Resource of type `message` constrained
-as specified in Section 2:3.93.4.1.2.1.
+as specified in Section 2:3.93.4.1.2.1 and conforming to the 
+[PMIR Feed MessageDefinition](MessageDefinition-IHE.PMIR.MessageDefinition.html).
 
 A Supplier shall be able to send a request for both the JSON and the XML
 messaging formats as defined in FHIR. A Consumer shall support accepting
