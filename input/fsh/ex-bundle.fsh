@@ -1,6 +1,7 @@
 Instance:         ex-PMIRBundleMerge
 InstanceOf:       PMIRBundle
 Title:            "IHE Patient Master Identity Registry Message Bundle Merge Example"
+Description:      "IHE PMIR example Bundle for a patient that has been merged."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
@@ -35,6 +36,7 @@ Usage:            #example
 Instance:         ex-PMIRBundleCreate
 InstanceOf:       PMIRBundle
 Title:            "IHE Patient Master Identity Registry Message Bundle Create Example"
+Description:      "IHE PMIR example to create two patients."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
@@ -126,6 +128,7 @@ Usage:            #example
 Instance:         ex-PMIRBundleUpdate
 InstanceOf:       PMIRBundle
 Title:            "IHE Patient Master Identity Registry Message Bundle Update Example"
+Description:      "IHE PMIR example to update a patient."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
@@ -183,6 +186,7 @@ Usage:            #example
 Instance:         ex-PMIRBundleDelete
 InstanceOf:       PMIRBundle
 Title:            "IHE Patient Master Identity Registry Message Bundle Delete Example"
+Description:      "IHE PMIR example to delete a patient."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
