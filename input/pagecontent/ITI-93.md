@@ -236,9 +236,13 @@ record to show consistency between message sent by the Supplier and
 action taken at the Consumer.
 
 The actors involved shall record audit events according to the
-following:
+[Audit Event for Mobile Patient Identity Feed by the Supplier](StructureDefinition-IHE.PMIR.Feed.Audit.Supplier.html)
+and [Audit Event for Mobile Patient Identity Feed by the Consumer](StructureDefinition-IHE.PMIR.Feed.Audit.Consumer.html).
 
 ##### 2:3.93.5.1.1 Supplier audit message:
+
+This table is being superseded by the [Audit Event for Mobile Patient Identity Feed by the Supplier](StructureDefinition-IHE.PMIR.Feed.Audit.Supplier.html)
+and will be removed.
 
 <table class="grid table-striped">
 <tbody>
@@ -491,6 +495,9 @@ ParticipantObjectIdentification)</strong></p></th>
 </table>
 
 ##### 2:3.93.5.1.2 Consumer audit message:
+
+This table is being superseded by the [Audit Event for Mobile Patient Identity Feed by the Consumer](StructureDefinition-IHE.PMIR.Feed.Audit.Consumer.html)
+and will be removed.
 
 <table class="grid table-striped">
 <tbody>

@@ -196,9 +196,13 @@ between the request by the Patient Identity Subscriber and the action
 taken by the Patient Identity Registry.
 
 The actors involved shall record audit events according to the
-following:
+[Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber](StructureDefinition-IHE.PMIR.Feed.Audit.Subscriber.html)
+and [Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Registry](StructureDefinition-IHE.PMIR.Feed.Audit.Subscription.html).
 
 ##### 2:3.94.5.1.1 Patient Identity Subscriber audit message:
+
+This table is being superseded by the [Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber](StructureDefinition-IHE.PMIR.Feed.Audit.Subscriber.html)
+and will be removed.
 
 <table class="grid table-striped">
 <tbody>
@@ -500,6 +504,10 @@ ParticipantObjectIdentification)</strong></p></th>
 </table>
 
 ##### 2:3.94.5.1.2 Patient Identity Registry audit message:
+
+This table is being superseded by the [Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Registry](StructureDefinition-IHE.PMIR.Feed.Audit.Subscription.html).
+and will be removed.
+
 
 <table class="grid table-striped">
 <tbody>
