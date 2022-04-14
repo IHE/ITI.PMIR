@@ -31,7 +31,13 @@ underlying standards for patient master identity management. The FHIR
 message pattern was chosen because it fits well into the subscription
 notification model.
 
-[Open and Closed Issues](issues.html)
+<div markdown="1" class="stu-note">
+
+| [Significant Changes, Open, and Closed Issues](issues.html) |
+{: .grid}
+
+</div>
+
 
 ### Organization of This Guide
 This guide is organized into three main sections:
