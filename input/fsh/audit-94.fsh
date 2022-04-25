@@ -28,12 +28,11 @@ Defines constraints on the AuditEvent Resource to record when a Subscribe to Pat
   * who 1..1
   * who ^short = "Identity of the human that initiated the transaction."
 * agent[destination]
-  * name 1..1
-  * name ^short = "http endpoint URI"
   * type = DCM#110152 "Destination"
   * who 1..1
   * requestor = false
   * network 1..1
+    * ^short = "Endpoint of the destination"
     * address 1..1
     * type 1..1
 * entity 1..*
@@ -45,10 +44,12 @@ Defines constraints on the AuditEvent Resource to record when a Subscribe to Pat
   * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what 1..1
+  * what only Reference(Patient)
 * entity[subscription]
   * type = http://hl7.org/fhir/resource-types#Subscription "Subscription"
   * role = http://terminology.hl7.org/CodeSystem/object-role#9 "Subscriber"
   * what 1..1
-  * what ^short = "The Subscription being created/updated/deleted"
+  * what only Reference(Subscription)
+    * ^short = "The Subscription being created/updated/deleted"
   * query 1..1
   * query ^short = "The Subscription.criteria value"

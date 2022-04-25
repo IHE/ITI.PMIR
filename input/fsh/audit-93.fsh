@@ -24,12 +24,11 @@ Defines constraints on the AuditEvent Resource to record when a Mobile Patient I
     * address 1..1
     * type 1..1
 * agent[destination]
-  * name 1..1
-  * name ^short = "http endpoint URI"
   * type = DCM#110152 "Destination"
   * who 1..1
   * requestor = false
   * network 1..1
+    * ^short = "Endpoint of the destination"
     * address 1..1
     * type 1..1
 * entity 1..*
@@ -41,8 +40,10 @@ Defines constraints on the AuditEvent Resource to record when a Mobile Patient I
   * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what 1..1
+  * what only Reference(Patient)
 * entity[message]
   * type = http://hl7.org/fhir/resource-types#MessageHeader "MessageHeader"
   * what 1..1
-  * what ^short = "A reference to the MessageHeader in the message."
+  * what only Reference(MessageHeader)
+    * ^short = "A reference to the MessageHeader in the message."
   * name = "urn:ihe:iti:pmir:2019:patient-feed"
