@@ -6,7 +6,7 @@ Patient Master Identity Registry
 * https://profiles.ihe.net/ITI/
 * https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_PMIR.pdf
 
-* continuous build https://build.fhir.org/ig/IHE/ITI.PMIR/branches/main/
+* continuous build http://build.fhir.org/ig/IHE/ITI.PMIR/branches/master/index.html
 
 
 ## Notes for changes as part of migration
