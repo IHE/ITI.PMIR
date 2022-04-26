@@ -11,3 +11,7 @@ www
 # macos
 .DS_Store
 
+/_gencontinuous.sh
+/_genonce.bat
+/_genonce.sh
+/_gencontinuous.bat
