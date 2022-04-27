@@ -18,13 +18,13 @@ Defines constraints on the AuditEvent Resource to record when a Mobile Patient I
 * agent ^slicing.rules = #open
 * agent contains source 1..1 and destination 1..1
 * agent[source]
-  * type = DCM#110153 "Source"
+  * type = DCM#110153 "Source Role ID"
   * who 1..1
   * network 1..1
     * address 1..1
     * type 1..1
 * agent[destination]
-  * type = DCM#110152 "Destination"
+  * type = DCM#110152 "Destination Role ID"
   * who 1..1
   * requestor = false
   * network 1..1

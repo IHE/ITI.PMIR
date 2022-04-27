@@ -11,7 +11,7 @@ Usage:        #example
 * recorded = 2022-04-13T19:02:39Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
 * agent[source]
-  * type = DCM#110153 "Source"
+  * type = DCM#110153 "Source Role ID"
   * who = Reference(Device/ex-device)
   * requestor = true
   * network
@@ -19,7 +19,7 @@ Usage:        #example
     * type = http://hl7.org/fhir/network-type#1 "Machine Name"
 * agent[destination]
   * name = "https://pmir.example.org/"
-  * type = DCM#110152 "Destination"
+  * type = DCM#110152 "Destination Role ID"
   * who = Reference(Device/ex-pmir)
   * requestor = false
   * network
@@ -50,7 +50,7 @@ Usage:        #example
 * recorded = 2022-04-13T19:02:40Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
 * agent[source]
-  * type = DCM#110153 "Source"
+  * type = DCM#110153 "Source Role ID"
   * who = Reference(Device/ex-device)
   * requestor = true
   * network
@@ -58,7 +58,7 @@ Usage:        #example
     * type = http://hl7.org/fhir/network-type#1 "Machine Name"
 * agent[destination]
   * name = "https://pmir.example.org/"
-  * type = DCM#110152 "Destination"
+  * type = DCM#110152 "Destination Role ID"
   * who = Reference(Device/ex-pmir)
   * requestor = false
   * network

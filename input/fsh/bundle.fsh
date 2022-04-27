@@ -52,6 +52,6 @@ Title:            "IHE Patient Master Identity Registry Related Person"
 Description:      "StructureDefinition for RelatedPerson resource constraints for messages in the IHE PMIR Profile when a Patient is linked to a related person."
 
 * patient 1..1
-* patient only Reference(PMIRPatientRelated)
+* patient only Reference(Patient)
 * relationship 1..*
 * relationship from http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype (required)
