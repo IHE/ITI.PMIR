@@ -31,10 +31,10 @@ Usage:        #example
 * entity[patient]
   * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
-  * what = Reference(Patient/ex-patient)
+  * what = Reference(Patient/ex-patient-create1)
 * entity[message]
   * type = http://hl7.org/fhir/resource-types#MessageHeader "MessageHeader"
-  * what = Reference(MessageHeader/ex-messageheader)
+  * what = Reference(MessageHeader/ex-messageheader-create)
   * name = "urn:ihe:iti:pmir:2019:patient-feed"
 
 Instance:     ex-auditPmirFeed-consumer
@@ -70,8 +70,24 @@ Usage:        #example
 * entity[patient]
   * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
-  * what = Reference(Patient/ex-patient)
+  * what = Reference(Patient/ex-patient-create1)
 * entity[message]
   * type = http://hl7.org/fhir/resource-types#MessageHeader "MessageHeader"
-  * what = Reference(MessageHeader/ex-messageheader)
+  * what = Reference(MessageHeader/ex-messageheader-create)
   * name = "urn:ihe:iti:pmir:2019:patient-feed"
+
+Instance:     ex-device
+InstanceOf:   Device
+Title:        "Device Example for PMIR"
+Description:  """
+Device Example for PMIR.
+"""
+Usage:        #example
+
+Instance:     ex-pmir
+InstanceOf:   Device
+Title:        "Device Example for PMIR"
+Description:  """
+Device Example for PMIR.
+"""
+Usage:        #example

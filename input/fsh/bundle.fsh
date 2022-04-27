@@ -5,7 +5,7 @@ Title:            "IHE Patient Master Identity Registry Bundle Message"
 Description:      "StructureDefinition for Bundle resource constraints for messages in the IHE PMIR Profile."
 * type = #history
 * entry 1..*
-* entry ^slicing.discriminator.type = #type
+* entry ^slicing.discriminator.type = #value
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
 * entry contains PMIRPatientEntry 0..* and PMIRPatientEntryMerge 0..*

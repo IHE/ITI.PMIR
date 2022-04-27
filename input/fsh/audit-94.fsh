@@ -25,6 +25,7 @@ Defines constraints on the AuditEvent Resource to record when a Subscribe to Pat
     * address 1..1
     * type 1..1
 * agent[requestor]
+  * type ^short = "Access Control role(s) the user holds that allows this transaction."
   * who 1..1
   * who ^short = "Identity of the human that initiated the transaction."
 * agent[destination]

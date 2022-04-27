@@ -18,7 +18,9 @@ Usage:        #example
     * address = "subscriber.example.org"
     * type = http://hl7.org/fhir/network-type#1 "Machine Name"
 * agent[requestor]
-  * who = Reference(Practitioner/ex-practitioner)
+  * type = DCM#110150 "Application"
+  * who.identifier.system = "http://example.org/practitioner"
+  * who.identifier.value = "1234567890"
   * requestor = true
 * agent[destination]
   * name = "https://pmir.example.org"
@@ -34,7 +36,7 @@ Usage:        #example
 * entity[patient]
   * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
-  * what = Reference(Patient/ex-patient)
+  * what = Reference(Patient/ex-patient-create1)
 * entity[subscription]
   * type = http://hl7.org/fhir/resource-types#Subscription "Subscription"
   * role = http://terminology.hl7.org/CodeSystem/object-role#9 "Subscriber"
@@ -61,7 +63,8 @@ Usage:        #example
     * address = "subscriber.example.org"
     * type = http://hl7.org/fhir/network-type#1 "Machine Name"
 * agent[requestor]
-  * who = Reference(Practitioner/ex-practitioner)
+  * who.identifier.system = "http://example.org/practitioner"
+  * who.identifier.value = "1234567890"
   * requestor = true
 * agent[destination]
   * name = "https://pmir.example.org"
@@ -77,9 +80,10 @@ Usage:        #example
 * entity[patient]
   * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
-  * what = Reference(Patient/ex-patient)
+  * what = Reference(Patient/ex-patient-create1)
 * entity[subscription]
   * type = http://hl7.org/fhir/resource-types#Subscription "Subscription"
   * role = http://terminology.hl7.org/CodeSystem/object-role#9 "Subscriber"
   * what = Reference(Subscription/ex-subscription)
   * query = "UGF0aWVudD9faWQ9ZXgtcGF0aWVudA=="
+
