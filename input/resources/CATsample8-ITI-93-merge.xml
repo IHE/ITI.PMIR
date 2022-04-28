@@ -17,13 +17,13 @@
           <code value="ok"/>
         </response>
         <focus>
-          <reference value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Patient/371a3246-f77c-eb11-95e7-d067e54cbc0c"/>
+          <reference value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Bundle/bacc7c8d-2f3f-4f72-a881-ff2dbb3d7ddc"/>
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:fc294970-e11d-470a-8357-4cf71fe5b914"/>
+    <fullUrl value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Bundle/bacc7c8d-2f3f-4f72-a881-ff2dbb3d7ddc"/>
     <resource>
       <Bundle>
         <id value="bacc7c8d-2f3f-4f72-a881-ff2dbb3d7ddc"/>

@@ -6,23 +6,35 @@ Description:      "StructureDefinition for Bundle resource constraints for messa
 * type = #history
 * entry 1..*
 * entry ^slicing.discriminator.type = #value
-* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.discriminator.path = "request.method"
 * entry ^slicing.rules = #closed
-* entry contains PMIRPatientEntry 0..* and PMIRPatientEntryMerge 0..*
-* entry[PMIRPatientEntry]
+* entry contains 
+  PMIREntryCreate 0..* and
+  PMIREntryUpdate 0..* and
+  PMIREntryDelete 0..* 
+* entry[PMIREntryCreate]
+  * resource 1..1
   * resource only Patient
   * request 1..1
-    * method 1..1
+    * method = #POST
     * url 1..1
   * response 1..1
     * status 1..1
-* entry[PMIRPatientEntryMerge]
-  * resource only PMIRPatientMerge
+* entry[PMIREntryUpdate]
+  * resource 1..1
+  * resource only Patient
   * request 1..1
     * method = #PUT
     * url 1..1
   * response 1..1
     * status 1..1
+* entry[PMIREntryDelete]
+  * resource only Patient
+  * request 1..1
+    * method = #DELETE
+    * url 1..1
+  * response 1..1
+    * status 1..1  
 
 Profile:          PMIRPatientMerge
 Parent:           Patient

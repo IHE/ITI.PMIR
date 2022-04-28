@@ -17,7 +17,7 @@
           <code value="ok"/>
         </response>
         <focus>
-          <reference value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Patient/8a940348-6b7c-eb11-95e7-d067e54cbc0c"/>
+          <reference value="urn:uuid:52670f39-60d4-414b-9823-7b7ca043c3f3"/>
         </focus>
       </MessageHeader>
     </resource>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
+  <id value="72681afa-2bee-4422-bdf7-d0363e113b65"/>
   <meta>
     <profile value="https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Bundle"/>
   </meta>
-  <id value="72681afa-2bee-4422-bdf7-d0363e113b65"/>
   <type value="message"/>
   <timestamp value="2021-03-03T23:06:02.948+01:00"/>
   <entry>
-    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir//MessageHeader/76c55983-0800-41f2-80b7-a49719e8334d"/>
+    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir/MessageHeader/76c55983-0800-41f2-80b7-a49719e8334d"/>
     <resource>
       <MessageHeader xmlns="http://hl7.org/fhir">
         <meta>
-          <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.MessageHeader"/>
+          <profile value="https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.MessageHeader"/>
         </meta>
         <eventUri value="urn:ihe:iti:pmir:2019:patient-feed"/>
         <destination>
@@ -41,15 +41,16 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir//Bundle/76c55983-0800-41f2-80b7-a49719e8334d"/>
+    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir/Bundle/76c55983-0800-41f2-80b7-a49719e8334d"/>
     <resource>
       <Bundle xmlns="http://hl7.org/fhir">
         <id value="76c55983-0800-41f2-80b7-a49719e8334d"/>
         <meta>
-          <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.BundleHistory"/>
+          <profile value="https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Bundle.History"/>
         </meta>
         <type value="history"/>
         <entry>
+          <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir/Patient/e8f9de72-4398-4351-8f19-a5e14835a1d3"/>
           <resource>
             <Patient xmlns="http://hl7.org/fhir">
               <identifier>

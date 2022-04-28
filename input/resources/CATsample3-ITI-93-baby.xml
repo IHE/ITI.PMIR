@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
+  <id value="30e285b5-a28c-444f-a898-a15159c82f38"/>
   <meta>
     <profile value="https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Bundle"/>
   </meta>
-  <id value="30e285b5-a28c-444f-a898-a15159c82f38"/>
   <type value="message"/>
   <timestamp value="2021-03-03T22:56:13.868+01:00"/>
   <entry>
-    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir//MessageHeader/76354729-8458-434c-ace5-007e6ff32464"/>
+    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir/MessageHeader/76354729-8458-434c-ace5-007e6ff32464"/>
     <resource>
       <MessageHeader xmlns="http://hl7.org/fhir">
         <meta>
-          <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.MessageHeader"/>
+          <profile value="https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.MessageHeader"/>
         </meta>
         <eventUri value="urn:ihe:iti:pmir:2019:patient-feed"/>
         <destination>
@@ -41,15 +41,16 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir//Bundle/76354729-8458-434c-ace5-007e6ff32464"/>
+    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir/Bundle/76354729-8458-434c-ace5-007e6ff32464"/>
     <resource>
       <Bundle xmlns="http://hl7.org/fhir">
         <id value="76354729-8458-434c-ace5-007e6ff32464"/>
         <meta>
-          <profile value="http://ihe.net/fhir/StructureDefinition/IHE.PMIR.BundleHistory"/>
+          <profile value="https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Bundle.History"/>
         </meta>
         <type value="history"/>
         <entry>
+          <fullUrl value="urn:uuid:cb80f151-8209-46b8-87e8-b0c20186b654"/>
           <resource>
             <Patient xmlns="http://hl7.org/fhir">
               <identifier>
@@ -67,7 +68,7 @@
           </resource>
           <request>
             <method value="POST"/>
-            <url value="Patient/cb80f151-8209-46b8-87e8-b0c20186b654"/>
+            <url value="Patient"/>
           </request>
           <response>
             <status value="200"/>

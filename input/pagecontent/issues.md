@@ -5,6 +5,7 @@
 - Removed inline example and linked to current examples.
 - Added in MessageDefinition resources
 - Added in CapabilityStatement resources
+- Changed History bundle to be based off of the request.method
 - Replaced Audit Event tables with profiled AuditEvents
   - Replaced queryParameters in ITI-94 audit with the subscription resource
 

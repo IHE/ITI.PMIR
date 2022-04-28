@@ -5,6 +5,7 @@ Description:      """
 PMIR MessageDefinition for the [Mobile Patient Identity Feed \[ITI-93\]](ITI-93.html)
 """
 Usage:            #definition
+* name = "IHE_PMIR_MessageDefinition"
 * status = #active
 * date = 2022-03-31
 * publisher = "Integrating the Healthcare Enterprise (IHE)"
@@ -30,6 +31,7 @@ Description:      """
 PMIR MessageDefinition Response for the [Mobile Patient Identity Feed \[ITI-93\]](ITI-93.html)
 """
 Usage:            #definition
+* name = "IHE_PMIR_MessageDefinition_Response"
 * status = #active
 * date = 2022-03-31
 * publisher = "Integrating the Healthcare Enterprise (IHE)"

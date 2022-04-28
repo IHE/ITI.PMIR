@@ -23,7 +23,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:400cccd5-1fc1-4d88-83f0-f90077f1ec1b"/>
+    <fullUrl value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Patient/8f33f71d-497c-eb11-95e7-d067e54cbc0c"/>
     <resource>
       <Bundle>
         <id value="8f52a376-d6d2-46ab-a810-c4233bd46c69"/>

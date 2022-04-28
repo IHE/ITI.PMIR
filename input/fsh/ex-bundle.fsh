@@ -5,10 +5,10 @@ Description:      "IHE PMIR example Bundle for a patient that has been merged."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
-  * fullUrl = "http://example.com/fhir/MessageHeader/ex-messageheader-merge"
+  * fullUrl = "MessageHeader/ex-messageheader-merge"
   * resource = ex-messageheader-merge
 * entry[PMIRBundleHistoryEntry]
-  * fullUrl = "http://example.com/fhir/Bundle/abc"
+  * fullUrl = "Bundle/ex-bundle-history-merge"
   * resource = ex-bundle-history-merge
 
 
@@ -19,7 +19,7 @@ Description:      "Example PMIR History Bundle for merging."
 Usage:            #example
 * id = "ex-bundle-history-merge"
 * type = #history
-* entry[PMIRPatientEntryMerge]
+* entry[PMIREntryUpdate]
   * fullUrl = "http://example.com/fhir/Patient/123"
   * resource = ex-patient-merge
   * request
@@ -36,7 +36,7 @@ Usage:            #example
 * id = "ex-messageheader-merge"
 * eventUri = "urn:ihe:iti:pmir:2019:patient-feed"
 * source.endpoint = "http://example.com/patientSource"
-* focus = Reference(Bundle/abc)
+* focus = Reference(Bundle/ex-bundle-history-merge)
 * destination.endpoint = "http://example.com/patientEndpoint"
 
 Instance:         ex-patient-merge
@@ -64,32 +64,38 @@ Description:      "IHE PMIR example to create two patients."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
-  * fullUrl = "http://example.com/fhir/MessageHeader/ex-messageheader-create"
+  * fullUrl = "MessageHeader/ex-messageheader-create"
   * resource = ex-messageheader-create
 * entry[PMIRBundleHistoryEntry]
-  * fullUrl = "http://example.com/fhir/Bundle/a"
-  * resource
-    * resourceType = "Bundle"
-    * id = "a"
-    * type = #history
-    * entry[PMIRPatientEntry][+]
-      * fullUrl = "urn:uuid:14298d90-b285-4c4c-8252-5d4e7bb5fdb6"
-      * resource = ex-patient-create1
-      * request
-        * method = #POST
-        * url = "Patient"
-      * response
-        * status = "201"
-        * location = "Patient/ex-patient-create1/_history/1"
-    * entry[PMIRPatientEntry][+]
-      * fullUrl = "urn:uuid:95e1726c-9c3c-4de3-bebc-15daed6b6d34"
-      * resource = ex-patient-create2
-      * request
-        * method = #POST
-        * url = "Patient"
-      * response
-        * status = "201"
-        * location = "Patient/ex-patient-create2/_history/1"
+  * fullUrl = "Bundle/ex-bundle-history-create"
+  * resource = ex-bundle-history-create
+
+
+Instance:         ex-bundle-history-create 
+InstanceOf:       PMIRBundleHistory
+Title:            "PMIR History Bundle for create"
+Description:      "Example PMIR History Bundle for creating."
+Usage:            #example
+* id = "ex-bundle-history-create"
+* type = #history
+* entry[PMIREntryCreate][+]
+  * fullUrl = "urn:uuid:14298d90-b285-4c4c-8252-5d4e7bb5fdb6"
+  * resource = ex-patient-create1
+  * request
+    * method = #POST
+    * url = "Patient"
+  * response
+    * status = "201"
+    * location = "Patient/ex-patient-create1/_history/1"
+* entry[PMIREntryCreate][+]
+  * fullUrl = "urn:uuid:95e1726c-9c3c-4de3-bebc-15daed6b6d34"
+  * resource = ex-patient-create2
+  * request
+    * method = #POST
+    * url = "Patient"
+  * response
+    * status = "201"
+    * location = "Patient/ex-patient-create2/_history/1"
 
 Instance:         ex-messageheader-create
 InstanceOf:       PMIRMessageHeader 
@@ -99,7 +105,7 @@ Usage:            #example
 * id = "ex-messageheader-create"
 * eventUri = "urn:ihe:iti:pmir:2019:patient-feed"
 * source.endpoint = "http://example.com/patientSource"
-* focus = Reference(Bundle/a)
+* focus = Reference(Bundle/ex-bundle-history-create)
 * destination.endpoint = "http://example.com/patientEndpoint"
 
 Instance:         ex-patient-create1
@@ -173,7 +179,7 @@ Description:      "PMIR Example of a Related Person for Mother."
 Usage:            #example
 * id = "ex-related-mom"
 * patient = Reference(Patient/ex-related-child)
-* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MOTHER
+* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH
 
 Instance:         ex-related-child
 InstanceOf:       Patient
@@ -194,24 +200,28 @@ Description:      "IHE PMIR example to update a patient."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
-  * fullUrl = "http://example.com/fhir/MessageHeader/ex-messageheader-update"
+  * fullUrl = "MessageHeader/ex-messageheader-update"
   * resource = ex-messageheader-update
 * entry[PMIRBundleHistoryEntry]
-  * fullUrl = "http://example.com/fhir/Bundle/b"
-  * resource
-    * resourceType = "Bundle"
-    * id = "b"
-    * type = #history
-    * entry[PMIRPatientEntry]
-      * fullUrl = "http://example.com/fhir/Patient/ex-patient-update"
-      * resource = ex-patient-update
-      * request
-        * method = #PUT
-        * url = "Patient/ex-patient-update"
-      * response
-        * status = "200"
-        * location = "Patient/ex-patient-update/_history/2"
-        
+  * fullUrl = "Bundle/ex-bundle-history-update"
+  * resource = ex-bundle-history-update
+
+Instance:         ex-bundle-history-update 
+InstanceOf:       PMIRBundleHistory
+Title:            "PMIR History Bundle for update"
+Description:      "Example PMIR History Bundle for updating."
+Usage:            #example
+* id = "ex-bundle-history-update"
+* type = #history
+* entry[PMIREntryUpdate]
+  * fullUrl = "http://example.com/fhir/Patient/ex-patient-update"
+  * resource = ex-patient-update
+  * request
+    * method = #PUT
+    * url = "Patient/ex-patient-update"
+  * response
+    * status = "200"
+    * location = "Patient/ex-patient-update/_history/2"
 
 Instance:         ex-messageheader-update
 InstanceOf:       PMIRMessageHeader 
@@ -221,7 +231,7 @@ Usage:            #example
 * id = "ex-messageheader-update"
 * eventUri = "urn:ihe:iti:pmir:2019:patient-feed"
 * source.endpoint = "http://example.com/patientSource"
-* focus = Reference(Bundle/b)
+* focus = Reference(Bundle/ex-bundle-history-update)
 * destination.endpoint = "http://example.com/patientEndpoint"
 
 Instance:         ex-patient-update
@@ -264,24 +274,35 @@ Description:      "IHE PMIR example to delete a patient."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
-  * fullUrl = "http://example.com/fhir/MessageHeader/ex-messageheader-delete"
-  * resource
-    * resourceType = "MessageHeader"
-    * id = "ex-messageheader-delete"
-    * eventUri = "urn:ihe:iti:pmir:2019:patient-feed"
-    * source.endpoint = "http://example.com/patientSource"
-    * focus = Reference(Bundle/c)
-    * destination.endpoint = "http://example.com/patientEndpoint"
+  * fullUrl = "MessageHeader/ex-messageheader-delete"
+  * resource = ex-messageheader-delete
 * entry[PMIRBundleHistoryEntry]
-  * fullUrl = "http://example.com/fhir/Bundle/c"
-  * resource
-    * resourceType = "Bundle"
-    * id = "c"
-    * type = #history
-    * entry[PMIRPatientEntry]
-      * fullUrl = "http://example.com/fhir/Patient/111"
-      * request
-        * method = #DELETE
-        * url = "Patient/111"
-      * response
-        * status = "202"
+  * fullUrl = "Bundle/ex-bundle-history-delete"
+  * resource = ex-bundle-history-delete
+
+
+Instance:         ex-bundle-history-delete 
+InstanceOf:       PMIRBundleHistory
+Title:            "PMIR History Bundle for delete"
+Description:      "Example PMIR History Bundle for deleting."
+Usage:            #example
+* id = "ex-bundle-history-delete"
+* type = #history
+* entry[PMIREntryDelete]
+  * fullUrl = "Patient/ex-patient-delete"
+  * request
+    * method = #DELETE
+    * url = "Patient/ex-patient-delete"
+  * response
+    * status = "202"
+
+Instance:         ex-messageheader-delete
+InstanceOf:       PMIRMessageHeader 
+Title:            "PMIR example MessageHeader for delete"
+Description:      "Example PMIR MessageHeader for deleting."
+Usage:            #example
+* id = "ex-messageheader-delete"
+* eventUri = "urn:ihe:iti:pmir:2019:patient-feed"
+* source.endpoint = "http://example.com/patientSource"
+* focus = Reference(Bundle/ex-bundle-history-delete)
+* destination.endpoint = "http://example.com/patientEndpoint"
