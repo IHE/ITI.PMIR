@@ -1,3 +1,31 @@
+Profile:      AuditPmirSubscriptionCreate
+Parent:       https://profiles.ihe.net/ITI/basicaudit/StructureDefinition/IHE.BasicAudit.Create
+Id:           IHE.PMIR.Audit.Subscription.Create
+Title:        "Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Create"
+Description:  """
+Defines constraints on the AuditEvent Resource to record when a Subscribe to Patient Updates Transaction happens
+to create a new subscription, as recorded by the Patient Identity Subscriber and Registry.
+"""
+* subtype 2..*
+* subtype contains iti94 1..1
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* entity contains patient 0..* /*and subscription 1..1*/
+* entity[patient]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
+  * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
+  * what 1..1
+  * what only Reference(Patient)
+  /*
+* entity[subscription]
+  * type = http://hl7.org/fhir/resource-types#Subscription "Subscription"
+  * role = http://terminology.hl7.org/CodeSystem/object-role#9 "Subscriber"
+  * what 1..1
+  * what only Reference(Subscription)
+    * ^short = "The Subscription being created/updated/deleted"
+  * query 1..1
+  * query ^short = "The Subscription.criteria value"
+  */
+/*
 Profile:      AuditPmirFeedSubscription
 Parent:       AuditEvent
 Id:           IHE.PMIR.Feed.Audit.Subscription
@@ -54,3 +82,4 @@ Defines constraints on the AuditEvent Resource to record when a Subscribe to Pat
     * ^short = "The Subscription being created/updated/deleted"
   * query 1..1
   * query ^short = "The Subscription.criteria value"
+*/
