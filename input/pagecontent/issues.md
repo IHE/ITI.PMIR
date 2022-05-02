@@ -13,39 +13,33 @@
 
 ### Open Issues and Questions
 
-- **PMIR-1:** HL7 Patient Administration workgroup is looking at better
+- **[PMIR-1](https://github.com/IHE/ITI.PMIR/issues/2):** HL7 Patient Administration workgroup is looking at better
 defining the patient merge/link functionality in FHIR. We will follow
 this work and collaborate with HL7 to keep these efforts aligned. See
 <https://confluence.hl7.org/display/PA/Merge+Operation>
 
-- **PMIR-2:** Should we include shall, should, or may for Provenance
+- **[PMIR-2](https://github.com/IHE/ITI.PMIR/issues/3):** Should we include shall, should, or may for Provenance
 resources in the Mobile Patient Identity Feed transaction? This version
 doesn’t provide any guidance on Provenance, should it?
 
-- **PMIR-6:** Should we include an option on the Patient Identity Registry
+- **[PMIR-6](https://github.com/IHE/ITI.PMIR/issues/4):** Should we include an option on the Patient Identity Registry
 to support the FHIR $match operation on patients? This would require an
 additional actor and transaction.
 
-- **PMIR-7:** IHE has submitted a Change Request
-[GF\#23009](https://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemEdit&tracker_item_id=23009)
-with HL7 to clarify their usage of link with RelatedPerson as
-recommended in this profile to allow for management of parent
-relationships to children.
-
-- **PMIR-8:** Should we require maintaining resource versioning
+- **[PMIR-8](https://github.com/IHE/ITI.PMIR/issues/5):** Should we require maintaining resource versioning
 information when updates are made to resources?
 
-- **PMIR-9:** If other domain patient identities are included in the feed,
+- **[PMIR-9](https://github.com/IHE/ITI.PMIR/issues/6):** If other domain patient identities are included in the feed,
 should there be expected actions on the Patient Identity Registry or
 Patient Identity Consumer?
 
-- **PMIR-10:** The security for the feed transaction is currently being
+- **[PMIR-10](https://github.com/IHE/ITI.PMIR/issues/7):** The security for the feed transaction is currently being
 debated in IHE and HL7. The mutual authentication solution in ATNA may
 be used. The IUA solution with OAuth identities may be used. These
 solutions aren’t straight-forward and resolution of IHE’s recommendation
 requires trial implementation feedback.
 
-- **PMIR-11:** CP-ITI-1203 changed the name of a PMIR actor from “Patient
+- **[PMIR-11](https://github.com/IHE/ITI.PMIR/issues/8):** CP-ITI-1203 changed the name of a PMIR actor from “Patient
 Identity Manager” to “Patient Identity Registry” to better reflect the
 passive role that the actor plays in PMIR. There was a suggestion at
 that time to change the name of the profile from “Patient Master
@@ -74,3 +68,11 @@ and should this profile use demographics instead of identity?
 
   - *We have used identity to cover both identifiers and demographics as
 defined under the new glossary terms and in the Concepts section.*
+
+- **PMIR-7:** IHE has submitted a Change Request
+[GF\#23009](https://jira.hl7.org/browse/FHIR-23009)
+with HL7 to clarify their usage of link with RelatedPerson as
+recommended in this profile to allow for management of parent
+relationships to children.
+
+  - *Issue has been clarified*
