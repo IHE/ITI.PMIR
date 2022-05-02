@@ -27,7 +27,7 @@ jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
 copyrightYear: 2020+
 dependencies:
-  ihe.iti.basicaudit: 1.0.1
+  ihe.iti.basicaudit: dev
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
