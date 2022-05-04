@@ -1,9 +1,5 @@
 Profile:      AuditPmirSubscriptionCreate
-<<<<<<< HEAD
-Parent:       IHE.BasicAudit.Create
-=======
 Parent:       https://profiles.ihe.net/ITI/BasicAudit/StructureDefinition/IHE.BasicAudit.Create
->>>>>>> f74f1f7 (Updated examples to fix QA errors.)
 Id:           IHE.PMIR.Audit.Subscription.Create
 Title:        "Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Create"
 Description:  """
