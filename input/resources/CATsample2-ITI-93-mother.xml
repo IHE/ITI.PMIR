@@ -14,6 +14,7 @@
           <endpoint value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir"/>
         </source>
         <response>
+          <identifier value="070b3907-883b-4f20-af66-88a5db6b73ad"/>
           <code value="ok"/>
         </response>
         <focus>

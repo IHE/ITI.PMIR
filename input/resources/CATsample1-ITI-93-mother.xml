@@ -8,7 +8,7 @@
   <type value="message"/>
   <timestamp value="2021-03-03T18:51:42.237+01:00"/>
   <entry>
-    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir//MessageHeader/070b3907-883b-4f20-af66-88a5db6b73ad"/>
+    <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir/MessageHeader/070b3907-883b-4f20-af66-88a5db6b73ad"/>
     <resource>
       <MessageHeader xmlns="http://hl7.org/fhir">
         <meta>
