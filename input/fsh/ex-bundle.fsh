@@ -108,6 +108,18 @@ Usage:            #example
 * focus = Reference(Bundle/ex-bundle-history-create)
 * destination.endpoint = "http://example.com/patientEndpoint"
 
+Instance:         ex-messageheader-create-response
+InstanceOf:       PMIRMessageHeaderResponse 
+Title:            "PMIR example MessageHeader for create"
+Description:      "Example PMIR MessageHeader for creating."
+Usage:            #example
+* id = "ex-messageheader-create-response"
+* eventUri = "urn:ihe:iti:pmir:2019:patient-feed-response"
+* source.endpoint = "http://example.com/patientEndpoint"
+* response
+  * identifier = "ex-messageheader-create"
+  * code = #ok
+
 Instance:         ex-patient-create1
 InstanceOf:       Patient 
 Title:            "PMIR example Patient for create"

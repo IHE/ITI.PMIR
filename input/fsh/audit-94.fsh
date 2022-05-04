@@ -1,5 +1,5 @@
 Profile:      AuditPmirSubscriptionCreate
-Parent:       https://profiles.ihe.net/ITI/BasicAudit/StructureDefinition/IHE.BasicAudit.Create
+Parent:       https://profiles.ihe.net/ITI/BALP/StructureDefinition/IHE.BasicAudit.Create
 Id:           IHE.PMIR.Audit.Subscription.Create
 Title:        "Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Create"
 Description:  """
@@ -9,77 +9,63 @@ to create a new subscription, as recorded by the Patient Identity Subscriber and
 * subtype 2..*
 * subtype contains iti94 1..1
 * subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
-* entity contains patient 0..* /*and subscription 1..1*/
+* entity contains patient 0..* 
 * entity[patient]
   * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what 1..1
   * what only Reference(Patient)
-  /*
-* entity[subscription]
-  * type = http://hl7.org/fhir/resource-types#Subscription "Subscription"
-  * role = http://terminology.hl7.org/CodeSystem/object-role#9 "Subscriber"
-  * what 1..1
-  * what only Reference(Subscription)
-    * ^short = "The Subscription being created/updated/deleted"
-  * query 1..1
-  * query ^short = "The Subscription.criteria value"
-  */
-/*
-Profile:      AuditPmirFeedSubscription
-Parent:       AuditEvent
-Id:           IHE.PMIR.Feed.Audit.Subscription
-Title:        "Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry"
+
+Profile:      AuditPmirSubscriptionRead
+Parent:       https://profiles.ihe.net/ITI/BALP/StructureDefinition/IHE.BasicAudit.Read
+Id:           IHE.PMIR.Audit.Subscription.Read
+Title:        "Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Read"
 Description:  """
-Defines constraints on the AuditEvent Resource to record when a Subscribe to Patient Updates Transaction happens, as recorded by the Patient Identity Subscriber and Registry.
+Defines constraints on the AuditEvent Resource to record when a Subscribe to Patient Updates Transaction happens
+to read a subscription, as recorded by the Patient Identity Subscriber and Registry.
 """
-* modifierExtension 0..0
-* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "RESTful Operation"
-* subtype = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
-* action 1..1
-* action ^short = "C (create) , R (read), U (update), or D (delete) as appropriate"
-* recorded 1..1
-* outcome 1..1
-* outcomeDesc MS
-* agent 2..*
-* agent ^slicing.discriminator.type = #pattern
-* agent ^slicing.discriminator.path = "type"
-* agent ^slicing.rules = #open
-* agent contains source 1..1 and requestor 0..* and destination 1..1
-* agent[source]
-  * type = DCM#110153 "Source Role ID"
-  * who 1..1
-  * network 1..1
-    * address 1..1
-    * type 1..1
-* agent[requestor]
-  * type ^short = "Access Control role(s) the user holds that allows this transaction."
-  * who 1..1
-  * who ^short = "Identity of the human that initiated the transaction."
-* agent[destination]
-  * type = DCM#110152 "Destination Role ID"
-  * who 1..1
-  * requestor = false
-  * network 1..1
-    * ^short = "Endpoint of the destination"
-    * address 1..1
-    * type 1..1
-* entity 1..*
-* entity ^slicing.discriminator.type = #pattern
-* entity ^slicing.discriminator.path = "type"
-* entity ^slicing.rules = #closed
-* entity contains patient 0..* and subscription 1..1
+* subtype 2..*
+* subtype contains iti94 1..1
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* entity contains patient 0..* 
 * entity[patient]
   * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what 1..1
   * what only Reference(Patient)
-* entity[subscription]
-  * type = http://hl7.org/fhir/resource-types#Subscription "Subscription"
-  * role = http://terminology.hl7.org/CodeSystem/object-role#9 "Subscriber"
+
+Profile:      AuditPmirSubscriptionUpdate
+Parent:       https://profiles.ihe.net/ITI/BALP/StructureDefinition/IHE.BasicAudit.Update
+Id:           IHE.PMIR.Audit.Subscription.Update
+Title:        "Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Update"
+Description:  """
+Defines constraints on the AuditEvent Resource to record when a Subscribe to Patient Updates Transaction happens
+to update a subscription, as recorded by the Patient Identity Subscriber and Registry.
+"""
+* subtype 2..*
+* subtype contains iti94 1..1
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* entity contains patient 0..* 
+* entity[patient]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
+  * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what 1..1
-  * what only Reference(Subscription)
-    * ^short = "The Subscription being created/updated/deleted"
-  * query 1..1
-  * query ^short = "The Subscription.criteria value"
-*/
+  * what only Reference(Patient) 
+
+Profile:      AuditPmirSubscriptionDelete
+Parent:       https://profiles.ihe.net/ITI/BALP/StructureDefinition/IHE.BasicAudit.Delete
+Id:           IHE.PMIR.Audit.Subscription.Delete
+Title:        "Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Delete"
+Description:  """
+Defines constraints on the AuditEvent Resource to record when a Subscribe to Patient Updates Transaction happens
+to delete a subscription, as recorded by the Patient Identity Subscriber and Registry.
+"""
+* subtype 2..*
+* subtype contains iti94 1..1
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* entity contains patient 0..* 
+* entity[patient]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#1 "Person"
+  * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
+  * what 1..1
+  * what only Reference(Patient)  

@@ -195,5 +195,8 @@ Source element. Both actors audit this transaction to show consistency
 between the request by the Patient Identity Subscriber and the action
 taken by the Patient Identity Registry.
 
-The actors involved shall record audit events according to the
-[Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry](StructureDefinition-IHE.PMIR.Feed.Audit.Subscription.html).
+The actors involved shall record audit events according to the following:
+- [Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Create](StructureDefinition-IHE.PMIR.Audit.Subscription.Create.html)
+- [Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Read](StructureDefinition-IHE.PMIR.Audit.Subscription.Read.html)
+- [Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Update](StructureDefinition-IHE.PMIR.Audit.Subscription.Update.html)
+- [Audit Event for Subscribe to Patient Updates Transaction by the Patient Identity Subscriber and Registry for Delete](StructureDefinition-IHE.PMIR.Audit.Subscription.Delete.html)
