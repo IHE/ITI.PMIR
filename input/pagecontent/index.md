@@ -34,7 +34,21 @@ This guide is organized into four main sections:
 4. [Changes to other Profiles](other.html)
 
 
-Click on any of the links above, head on over the [table of contents](toc.html), or if you are looking for a specific artifact, check out the [index](artifacts.html).
+Click on any of the links above, head on over the [table of contents](toc.html), or if you are looking for a specific artifact, check out the [artifacts](artifacts.html).
+
+### Conformance Expectations
+
+IHE uses the normative words: Shall, Should, and May according to [standards conventions](https://profiles.ihe.net/GeneralIntro/ch-E.html).
+
+#### Must Support
+
+The use of ```mustSupport``` in StructureDefinition profiles equivalent to the IHE use of **R2** as defined in [Appendix Z](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir).
+
+mustSupport of true - only has a meaning on items that are minimal cardinality of zero (0), and applies only to the source actor populating the data. The source actor shall populate the elements marked with MustSupport, if the concept is supported by the actor, a value exists, and security and consent rules permit. 
+The consuming actors should handle these elements being populated or being absent/empty. 
+Note that sometimes mustSupport will appear on elements with a minimal cardinality greater than zero (0), this is due to inheritance from a less constrained profile.
+
+### Download 
 
 You can also download:
 
@@ -42,4 +56,4 @@ You can also download:
 * the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
 * the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
 
-The source code for this Implementation Guide can be found on [GitHub] (https://github.com/IHE/ITI.PMIR).
+The source code for this Implementation Guide can be found on [IHE GitHub](https://github.com/IHE/ITI.PMIR).

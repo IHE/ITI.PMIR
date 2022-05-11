@@ -3,4 +3,6 @@
 # IHE valueset that is not yet a real valueset
 Code System URI 'urn:ihe:event-type-code' is unknown so the code cannot be validated
 
+# additional codes on auditEvent.subtype are okay
+The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
