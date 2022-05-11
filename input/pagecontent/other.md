@@ -1,11 +1,11 @@
 <div markdown="1" class="stu-note">
-This section contains modifications to other IHE publications and profiles, and is not a part of the mCSD profile. The content here will be incorporated into the target narrative at a future time, usually when mCSD goes final-text.
+This section contains modifications to other IHE publications and profiles, and is not a part of the PMIR profile. The content here will be incorporated into the target narrative at a future time, usually when PMIR goes final-text.
 </div>
 
 ## IHE Technical Frameworks General Introduction Appendix A – Actor Summary Definitions
 
 |------------------------------------------------|
-| Editor, Add the following new or modified actors to the [IHE Technical Frameworks General Introduction Appendix A](https://profiles.ihe.net/GeneralIntro/ch-A.html): |
+| Editor, add the following new or modified actors to the [IHE Technical Frameworks General Introduction Appendix A](https://profiles.ihe.net/GeneralIntro/ch-A.html): |
 {:.grid .bg-info}
 
 | Actor Name                | Definition |
@@ -19,7 +19,7 @@ This section contains modifications to other IHE publications and profiles, and 
 ## IHE Technical Frameworks General Introduction Appendix B – Transaction Summary Definitions
 
 |------------------------------------------------|
-| Editor, Add the following new or modified transactions to the [IHE Technical Frameworks General Introduction Appendix B](https://profiles.ihe.net/GeneralIntro/ch-B.html): |
+| Editor, add the following new or modified transactions to the [IHE Technical Frameworks General Introduction Appendix B](https://profiles.ihe.net/GeneralIntro/ch-B.html): |
 {:.grid .bg-info}
 
 | Transaction Name and Number           | Definition |
@@ -31,7 +31,7 @@ This section contains modifications to other IHE publications and profiles, and 
 ## 3.78.2 Actor Roles
 
 |------------------------------------------------|
-| Editor, Replace Section 3.78.2 with the following. (Note: This section is currently in the PDQm Trial Implementation Supplement) |
+| Editor, replace Section 3.78.2 with the following. (Note: This section is currently in the PDQm Trial Implementation Supplement.) |
 {:.grid .bg-info}
 
 **Table 3.78.2-1: Actor Roles**
@@ -46,7 +46,7 @@ This section contains modifications to other IHE publications and profiles, and 
 ## 3.83.2 Actor Roles
 
 |------------------------------------------------|
-| Editor, Replace Section 3.83.2 with the following. (Note: This section is currently in the PIXm Trial Implementation Supplement) | 
+| Editor, Replace Section 3.83.2 with the following. (Note: This section is currently in the PIXm Trial Implementation Supplement.) | 
 {:.grid .bg-info}
 
 **Table 3.83.2-1: Actor Roles**
