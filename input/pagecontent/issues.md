@@ -13,7 +13,7 @@
 
 ### Open Issues and Questions
 
-- **[PMIR-1](https://github.com/IHE/ITI.PMIR/issues/2):** HL7 Patient Administration workgroup is looking at better defining the patient merge/link functionality in FHIR. We will follow this work and collaborate with HL7 to keep these efforts aligned. See <https://confluence.hl7.org/display/PA/Merge+Operation>
+- **[PMIR-1](https://github.com/IHE/ITI.PMIR/issues/2):** HL7 Patient Administration workgroup is looking at better defining the patient merge/link functionality in FHIR. We will follow this work and collaborate with HL7 to keep these efforts aligned. See <https://confluence.hl7.org/display/PA/Merge+Operation>.
 
 - **[PMIR-2](https://github.com/IHE/ITI.PMIR/issues/3):** Should we include shall, should, or may for Provenance resources in the Mobile Patient Identity Feed transaction? This version doesn’t provide any guidance on Provenance, should it?
 
@@ -33,12 +33,12 @@
 - **PMIR-3:** Should Subscription be an option or required on the Patient Identity Registry? Should the configurable feed destination be an option or required for Patient Identity Registry?
   - *Subscription is required and there is no requirement for how a configurable feed destination is handled.*
 
-- **PMIR-4:** There is a new profile work item in ITI that would bind this profile and MHD into a FHIR based document sharing health information exchange. That profile is Mobile Health Document Sharing
-(MHDS).*
+- **PMIR-4:** There is a new profile work item in ITI that would bind this profile and MHD into a FHIR based document sharing health information exchange.
+  - *That profile is Mobile Health Document Sharing(MHDS).*
 
 - **PMIR-5:** In some profiles demographics is used to cover all demographic information including identifiers. This profile uses identity to cover demographics and identifiers. Which term is most clear and should this profile use demographics instead of identity?
   - *We have used identity to cover both identifiers and demographics as defined under the new glossary terms and in the Concepts section.*
 
 - **PMIR-7:** IHE has submitted a Change Request [GF\#23009](https://jira.hl7.org/browse/FHIR-23009) with HL7 to clarify their usage of link with RelatedPerson as recommended in this profile to allow for management of parent
 relationships to children.
-  - *Issue has been clarified*
+  - *Issue has been clarified.*
