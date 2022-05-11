@@ -49,7 +49,7 @@ See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) fo
 A Patient Identity Subscriber shall create a Subscription Resource. The Subscription Resource shall be further constrained as described in the [Subscription Profile for PMIR] StructureDefinition-IHE.PMIR.Subscription.Request.html).
 
 
-####### 2:3.94.4.1.2.1.1 Criteria Constraints
+###### 2:3.94.4.1.2.1.1 Criteria Constraints
 
 The values for criteria enable Consumers to limit results based on what Patients they are concerned with.
 
