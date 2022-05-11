@@ -108,7 +108,7 @@ A Patient Identity Consumer shall accept the message and return a Mobile Patient
 
 - **Create, Update, Delete, Merge:** will process the feed according to its application capabilities. IHE profiles that use this transaction, e.g., MHDS, may provide additional requirements such as updating the data the Patient Identity Consumer is managing.
 
-###### *2:3.93.4.1.3.1* Post Merge/Delete Expectations
+###### 2:3.93.4.1.3.1 Post Merge/Delete Expectations
 
 Based upon policy, a Patient Identity Registry, when performing a GET on the deprecated or deleted Patient Resource Id (e.g., GET \[base\]/Patient/pat01), shall return:
 
