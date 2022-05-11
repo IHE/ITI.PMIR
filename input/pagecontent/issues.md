@@ -1,4 +1,4 @@
-## Significate changes from PMIR, Rev 1.3
+## Significant changes from PMIR, Rev 1.3
 
 - Removed inline UML text and moved it to images-source
 - Removed constraint tables for link to profiled resource page
