@@ -4,14 +4,14 @@
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
 id: ihe.iti.pmir
 canonical: https://profiles.ihe.net/ITI/PMIR
-version: 1.4.0
+version: 1.5.0-current
 name: IHE_ITI_PMIR
 title: "Patient Master Identity Registry (PMIR)"
 description: "The Patient Master Identity Registry (PMIR) Profile supports the creating, updating and deprecating of patient master identity information about a subject of care, as well as subscribing to changes to the patient master identity, using the HL7 FHIR standard resources and RESTful transactions."
-releaseLabel: ballot
-#releaseLabel: ci-build
+#releaseLabel: ballot
+releaseLabel: ci-build
 #releaseLabel: Trial-Implementation
-date: 2022-05-13
+#date: 2022-05-13
 status: active
 publisher:
   - name: IHE IT Infrastructure Technical Committee
