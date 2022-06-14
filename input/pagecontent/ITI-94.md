@@ -4,13 +4,13 @@ The Subscribe to Patient Updates transaction allows a Patient Identity Subscribe
 
 ### 2:3.94.2 Actor Roles
 
-Table 2:3.94.2-1: Actor Roles
+**Table 2:3.94.2-1: Actor Roles**
 
 | ---------- | --------------------------- |
 | **Actor:** | Patient Identity Subscriber |
 | **Description:** | Sends a Subscription request to the Patient Identity Registry |
 | **Actor:** | Patient Identity Registry |
-| **Description:** | Accepts a Subscription request and returns where the Subscription can be accessed. |
+| **Description:** | Accepts a Subscription request and returns where the Subscription can be accessed |
 {:.grid}
 
 ### 2:3.94.3 Referenced Standards
@@ -30,7 +30,7 @@ The Patient Identity Registry shall support all these interactions. The Patient 
 
 #### 2:3.94.4.1 Subscribe to Patient Updates Request Message
 
-The Subscribe to Patient Updates message is a FHIR create operation on a *Subscription* Resource.
+The Subscribe to Patient Updates message is a FHIR create operation on a Subscription Resource.
 
 ##### 2:3.94.4.1.1 Trigger Events
 
