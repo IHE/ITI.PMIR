@@ -27,6 +27,7 @@
 
 - **[PMIR-11](https://github.com/IHE/ITI.PMIR/issues/8):** CP-ITI-1203 changed the name of a PMIR actor from “Patient Identity Manager” to “Patient Identity Registry” to better reflect the passive role that the actor plays in PMIR. There was a suggestion at that time to change the name of the profile from “Patient Master Identity Registry” to “Patient Master Identity Registration.” Should the profile be renamed?
 
+- **[PMIR-12](https://github.com/IHE/ITI.PMIR/issues/1):** As part of FHIR R5 or R4B update, should we look at the option of using a rest-hook for subscription channel.type?
 
 ### Closed Issues
 
