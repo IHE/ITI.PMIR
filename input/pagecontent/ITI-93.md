@@ -110,19 +110,21 @@ A Patient Identity Consumer shall accept the message and return a Mobile Patient
 
 ###### 2:3.93.4.1.3.1 Post Merge/Delete Expectations
 
-Based upon policy, a Patient Identity Registry, when receiving a GET (from [ITI-78](https://profiles.ihe.net/ITI/PDQm/ITI-78.html) or any other method) or a PIXm query ([ITI-83](https://profiles.ihe.net/ITI/PIXm/ITI-83.html)) on the deprecated or deleted Patient Resource Id (e.g., GET \[base\]/Patient/pat01), shall return:
-
-- 200 OK, and return the deprecated Patient which is now marked as inactive, or
-
-- 404 Not Found
-
-Based upon policy, a Patient Identity Registry, when performing a SEARCH by the deprecated or deleted Patient Resource Id (e.g., GET \[base\]/Patient?\_id=pat01), shall return:
+Based upon policy, when a Patient Identity Registry responds to a `search` where the Patient is deprecated or deleted, for example, from a PDQm query [ITI-78](https://profiles.ihe.net/ITI/PDQm/ITI-78.html) or a PIXm query [ITI-83](https://profiles.ihe.net/ITI/PIXm/ITI-83.html), it shall return:
 
 - 200 OK, and return a Bundle with the inactive patient which is marked as inactive, or
 
 - 200 OK, and return a Bundle with no patient resource, or
 
 - If merged, 200 OK, and return a Bundle with both the target and old patient resources
+
+Based upon policy, when a Patient Identity Registry responds to a `read` or `vread`, `GET \[base\]/Patient/pat01`, on the deprecated or deleted Patient Resource Id, it shall return:
+
+- 200 OK, and return the deprecated Patient which is now marked as inactive, or
+
+- 404 Not Found
+
+
 
 #### 2:3.93.4.2 Mobile Patient Identity Feed Response
 
