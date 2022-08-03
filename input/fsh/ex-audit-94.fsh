@@ -6,8 +6,8 @@ AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Subsc
 when creating a Subscription.
 """
 Usage:        #example
-* subtype[+] = http://hl7.org/fhir/restful-interaction#create "create"
-* subtype[+] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* subtype[anyCreate] = http://hl7.org/fhir/restful-interaction#create "create"
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#C
 * recorded = 2022-04-13T19:33:45Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
@@ -50,8 +50,8 @@ Description:  """
 AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Registry to create a Subscription.
 """
 Usage:        #example
-* subtype[+] = http://hl7.org/fhir/restful-interaction#create "create"
-* subtype[+] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* subtype[anyCreate] = http://hl7.org/fhir/restful-interaction#create "create"
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#C
 * recorded = 2022-04-13T19:33:46Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
@@ -95,8 +95,8 @@ AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Subsc
 when reading a Subscription.
 """
 Usage:        #example
-* subtype[+] = http://hl7.org/fhir/restful-interaction#read "read"
-* subtype[+] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* subtype[anyRead] = http://hl7.org/fhir/restful-interaction#read "read"
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#R
 * recorded = 2022-04-13T19:33:45Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
@@ -139,8 +139,8 @@ Description:  """
 AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Registry to read a Subscription.
 """
 Usage:        #example
-* subtype[+] = http://hl7.org/fhir/restful-interaction#read "read"
-* subtype[+] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* subtype[anyRead] = http://hl7.org/fhir/restful-interaction#read "read"
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#R
 * recorded = 2022-04-13T19:33:46Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
@@ -184,8 +184,8 @@ AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Subsc
 when updating a Subscription.
 """
 Usage:        #example
-* subtype[+] = http://hl7.org/fhir/restful-interaction#update "update"
-* subtype[+] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* subtype[anyUpdate] = http://hl7.org/fhir/restful-interaction#update "update"
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#U
 * recorded = 2022-04-13T19:33:45Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
@@ -228,8 +228,8 @@ Description:  """
 AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Registry to update a Subscription.
 """
 Usage:        #example
-* subtype[+] = http://hl7.org/fhir/restful-interaction#update "update"
-* subtype[+] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* subtype[anyUpdate] = http://hl7.org/fhir/restful-interaction#update "update"
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#U
 * recorded = 2022-04-13T19:33:46Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
@@ -275,8 +275,8 @@ AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Subsc
 when deleting a Subscription.
 """
 Usage:        #example
-* subtype[+] = http://hl7.org/fhir/restful-interaction#delete "delete"
-* subtype[+] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* subtype[anyDelete] = http://hl7.org/fhir/restful-interaction#delete "delete"
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#D
 * recorded = 2022-04-13T19:33:45Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
@@ -319,8 +319,8 @@ Description:  """
 AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Registry to delete a Subscription.
 """
 Usage:        #example
-* subtype[+] = http://hl7.org/fhir/restful-interaction#delete "delete"
-* subtype[+] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
+* subtype[anyDelete] = http://hl7.org/fhir/restful-interaction#delete "delete"
+* subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#D
 * recorded = 2022-04-13T19:33:46Z
 * outcome = http://terminology.hl7.org/CodeSystem/audit-event-outcome#0 "Success"
