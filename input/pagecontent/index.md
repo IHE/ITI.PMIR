@@ -16,7 +16,7 @@ This profile is intended for FHIR-only configurations without other underlying s
 ### Organization of This Guide
 This guide is organized into four main sections:
 
-1. Volume 1: Use-Case Analysis
+1. Volume 1: Profiles
    1. [PMIR Introduction](volume-1.html)
    2. [PMIR Actors, Transactions, and Content Modules](volume-1.html#1491-pmir-actors-transactions-and-content-modules)
    3. [PMIR Actor Options](volume-1.html#1492-pmir-actor-options)
@@ -34,7 +34,7 @@ This guide is organized into four main sections:
 4. [Changes to other Profiles](other.html)
 
 
-Click on any of the links above, head on over the [table of contents](toc.html), or if you are looking for a specific artifact, check out the [artifacts](artifacts.html).
+Click on any of the links above, navigate the contents using the [table of contents](toc.html), or if you are looking for a specific artifact, check out the [artifacts](artifacts.html).
 
 ### Conformance Expectations
 
@@ -44,7 +44,7 @@ IHE uses the normative words: Shall, Should, and May according to [standards con
 
 The use of ```mustSupport``` in StructureDefinition profiles equivalent to the IHE use of **R2** as defined in [Appendix Z](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.10-profiling-conventions-for-constraints-on-fhir).
 
-mustSupport of true - only has a meaning on items that are minimal cardinality of zero (0), and applies only to the source actor populating the data. The source actor shall populate the elements marked with MustSupport, if the concept is supported by the actor, a value exists, and security and consent rules permit. 
+mustSupport of true - only has a meaning on items that are minimal cardinality of zero (0), and applies only to the source actor populating the data. The source actor shall populate the elements marked with MustSupport if the concept is supported by the actor, a value exists, and security and consent rules permit. 
 The consuming actors should handle these elements being populated or being absent/empty. 
 Note that sometimes mustSupport will appear on elements with a minimal cardinality greater than zero (0), this is due to inheritance from a less constrained profile.
 
