@@ -1,8 +1,8 @@
-**TODO: fill in the goals of the testing.
+**TODO: fill in the goals of the testing.**
 
 ## Test Plan
 
-**TODO: include actor based tests, include positive and edge cases. **
+**TODO: include actor based tests, include positive and edge cases.**
 
 ### Unit Test Procedure
 
