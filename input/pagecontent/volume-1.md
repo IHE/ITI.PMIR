@@ -3,7 +3,7 @@ information about a subject of care, as well as subscribing to changes, using HL
 
 **PMIR Concepts and Defined Terms:**
 
-In PMIR, a patient has a single “Patient Master Identity” (a.k.a, Golden Patient record) that is comprised of identifying information, such as business identifiers, name, phone, gender, birth date, address, marital status, photo, contacts, preference for language, and links to other patient identities (e.g., a mother’s identity linked to a newborn).
+In PMIR, a patient has a single “Patient Master Identity” (a.k.a., Golden Patient record) that is comprised of identifying information, such as business identifiers, name, phone, gender, birth date, address, marital status, photo, contacts, preference for language, and links to other patient identities (e.g., a mother’s identity linked to a newborn).
 
 A “Master Patient Identification Domain" is a collection of Patient Master Identities shared among a set of PMIR Patient Identity Source and Patient Identity Consumer Actors using the services of a single Patient Identity Registry.
 
