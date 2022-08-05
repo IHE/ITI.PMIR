@@ -1,8 +1,8 @@
 <div markdown="1" class="stu-note">
-This section contains modifications to other IHE publications and profiles, and is not a part of the PMIR profile. The content here will be incorporated into the target narrative at a future time, usually when PMIR goes final-text.
+This section contains modifications to other IHE publications and profiles, and is not a part of the PMIR Profile. The content here will be incorporated into the target narrative at a future time, usually when PMIR goes final text.
 </div>
 
-## IHE Technical Frameworks General Introduction Appendix A – Actor Summary Definitions
+## IHE Technical Frameworks General Introduction Appendix A: Actors
 
 |------------------------------------------------|
 | Editor, add the following new or modified actors to the [IHE Technical Frameworks General Introduction Appendix A](https://profiles.ihe.net/GeneralIntro/ch-A.html): |
@@ -16,7 +16,7 @@ This section contains modifications to other IHE publications and profiles, and 
 {:.grid .table-striped}
 
 
-## IHE Technical Frameworks General Introduction Appendix B – Transaction Summary Definitions
+## IHE Technical Frameworks General Introduction Appendix B: Transactions
 
 |------------------------------------------------|
 | Editor, add the following new or modified transactions to the [IHE Technical Frameworks General Introduction Appendix B](https://profiles.ihe.net/GeneralIntro/ch-B.html): |

@@ -34,7 +34,7 @@ The Mobile Patient Identity Feed message is a FHIR message with the new and upda
 
 ##### 2:3.93.4.1.1 Trigger Events
 
-A Supplier triggers a Mobile Patient Identity Feed Request to a Consumer when it detects, according to domain policy, a change in the Patient Master Identity (see [ITI TF-1: 49](volume-1.html)) i.e., create, update, merge, delete.
+A Supplier triggers a Mobile Patient Identity Feed Request to a Consumer when it detects, according to domain policy, a change in the Patient Master Identity (see [ITI TF-1: 49](volume-1.html)), i.e., create, update, merge, delete.
 
 A patient’s “Patient Master Identity” contains:
 
