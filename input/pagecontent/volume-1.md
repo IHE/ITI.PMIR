@@ -3,7 +3,7 @@ information about a subject of care, as well as subscribing to changes, using HL
 
 **PMIR Concepts and Defined Terms:**
 
-In PMIR, a patient has a single “Patient Master Identity” (a.k.a. Golden Patient record) that is comprised of identifying information, such as business identifiers, name, phone, gender, birth date, address, marital status, photo, contacts, preference for language, and links to other patient identities (e.g., a mother’s identity linked to a newborn).
+In PMIR, a patient has a single “Patient Master Identity” (a.k.a., Golden Patient record) that is comprised of identifying information, such as business identifiers, name, phone, gender, birth date, address, marital status, photo, contacts, preference for language, and links to other patient identities (e.g., a mother’s identity linked to a newborn).
 
 A “Master Patient Identification Domain" is a collection of Patient Master Identities shared among a set of PMIR Patient Identity Source and Patient Identity Consumer Actors using the services of a single Patient Identity Registry.
 
@@ -13,7 +13,7 @@ PMIR also enables resolution of cases where two or more Patient Master Identitie
 
 ## 1:49.1 PMIR Actors, Transactions, and Content Modules
 
-This section defines the actors, transactions, and/or content modules in this profile. General definitions of actors are given in the [Technical Frameworks General Introduction Appendix A] (https://profiles.ihe.net/GeneralIntro/ch-A.html). IHE Transactions can be found in the [Technical Frameworks General Introduction Appendix B] (https://profiles.ihe.net/GeneralIntro/ch-B.html). 
+This section defines the actors, transactions, and/or content modules in this profile. General definitions of actors are given in the [Technical Frameworks General Introduction Appendix A](https://profiles.ihe.net/GeneralIntro/ch-A.html). IHE Transactions can be found in the [Technical Frameworks General Introduction Appendix B](https://profiles.ihe.net/GeneralIntro/ch-B.html). 
 
 Figure 1:49.1-1 shows the actors directly involved in the PMIR Profile and the relevant transactions between them.
 
@@ -194,7 +194,9 @@ Joshua becomes concerned and travels to a different city to visit a Voluntary Co
 
 Joshua completes the HIV rapid test, which is positive. A confirmatory test is taken, which must be sent to the regional lab for processing. Both the results of the rapid test and the results of the confirmatory test reference Joshua’s ***duplicate*** patient master identity. The test results are saved to the Shared Health Record (SHR) referencing the duplicate patient master identity.
 
-When Joshua returns to the clinic to receive his confirmatory lab results, and after receiving counseling regarding confidentiality rules and the importance of care continuity, Joshua corrects his patient master identity. The EMR merges Joshua’s two patient master identities to a single patient master identity and sends a merge message to the national CR to do the same. Note: An unmerge would be handled as an administrative function and is out of scope for this profile.
+When Joshua returns to the clinic to receive his confirmatory lab results, and after receiving counseling regarding confidentiality rules and the importance of care continuity, Joshua corrects his patient master identity. The EMR merges Joshua’s two patient master identities to a single patient master identity and sends a merge message to the national CR to do the same.
+
+> Note: An unmerge would be handled as an administrative function and is out of scope for this profile.
 
 The various databases that store health information about Joshua have subscribed to patient update transactions on the national CR. To ensure patient safety for Joshua, these systems ensure that a query using Joshua’s resolved patient master identity would, correctly, return all of the health information associated with him -- whether it was originally persisted under his correct (surviving) patient master identity or under the duplicate (subsumed) patient master identity.
 

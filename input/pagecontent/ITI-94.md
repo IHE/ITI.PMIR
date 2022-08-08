@@ -46,7 +46,7 @@ See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) fo
 
 ###### 2:3.94.4.1.2.1 FHIR Subscription Resource Constraints
 
-A Patient Identity Subscriber shall create a Subscription Resource. The Subscription Resource shall be further constrained as described in the [Subscription Profile for PMIR] StructureDefinition-IHE.PMIR.Subscription.Request.html).
+A Patient Identity Subscriber shall create a Subscription Resource. The Subscription Resource shall be further constrained as described in the [Subscription Profile for PMIR](StructureDefinition-IHE.PMIR.Subscription.Request.html).
 
 
 ###### 2:3.94.4.1.2.1.1 Criteria Constraints
