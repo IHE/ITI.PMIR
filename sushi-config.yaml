@@ -11,7 +11,7 @@ description: "The Patient Master Identity Registry (PMIR) Profile supports the c
 #releaseLabel: ballot
 #releaseLabel: ci-build
 releaseLabel: Trial-Implementation
-date: 2022-08-12
+date: 2022-08-09
 status: active
 publisher:
   - name: IHE IT Infrastructure Technical Committee
