@@ -55,35 +55,27 @@ resources:
   Bundle/3594fe3c-31af-4695-b533-550e3bc0f1c9:
     name: CAT Sample 1 ITI-93 Mother
     description: Connectathon sample 1 message bundle to create a patient that is a mother.
-    exampleBoolean: true
   Bundle/d0bceb02-ddc1-4855-98a0-00bc364f24eb:
     name: CAT Sample 2 ITI-93 Mother
     description: Connectathon sample 2 message bundle to create a patient that is a mother.
-    exampleBoolean: true
   Bundle/30e285b5-a28c-444f-a898-a15159c82f38:
     name: CAT Sample 3 ITI-93 Baby
     description: Connectathon sample 3 message bundle to create a patient that is a baby.
-    exampleBoolean: true
   Bundle/08b38db4-13c1-48a3-ab50-80104d6dd66a:
     name: CAT Sample 4 ITI-93 Baby
     description: Connectathon sample 4 message bundle to create a patient that is a baby.
-    exampleBoolean: true
   RelatedPerson/bf7c8e34-1be8-4b67-aad7-d62d8da48065:
     name: CAT Sample 5 ITI-93 Related Person
     description: Connectathon sample 5 related person resource.
-    exampleBoolean: true
   Bundle/72681afa-2bee-4422-bdf7-d0363e113b65:
     name: CAT Sample 6 ITI-93 update Baby
     description: Connectathon sample 6 message bundle to update a patient that is a baby.
-    exampleBoolean: true
   Bundle/d97b9e33-4b48-4190-8622-0b4b5be9770d:
     name: CAT Sample 7 ITI-93 merge
     description: Connectathon sample 7 message bundle to merge a patient.
-    exampleBoolean: true
   Bundle/22125985-cac7-4da9-9557-ef4e7ff97140:
     name: CAT Sample 8 ITI-93 merge
     description: Connectathon sample 8 message bundle to merge a patient.
-    exampleBoolean: true
 
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate
