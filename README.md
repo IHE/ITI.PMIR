@@ -14,6 +14,3 @@ Patient Master Identity Registry
 * Remove constraint tables for link to StructureDefinition
 * Remove references to TF-2a/b/c/x  
 * Make sure canonical URLs are set correctly 
-
-
-
