@@ -2,8 +2,8 @@ Instance: IHE.PMIR.PatientIdentitySource
 InstanceOf: CapabilityStatement
 Usage: #definition
 * description = "CapabilityStatement for Patient Identity Source Actor in the IHE IT Infrastructure Technical Framework Supplement [IHE PMIR](index.html)."
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Patient Identity Source Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/PMIR/index.html\">PMIR</a>\r\n</div>"
+//* text.status = #additional
+//* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Patient Identity Source Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/PMIR/index.html\">PMIR</a>\r\n</div>"
 * name = "IHE_PMIR_PatientIdentitySource"
 * title = "IHE PMIR Patient Identity Source"
 * status = #active
@@ -32,8 +32,8 @@ Instance: IHE.PMIR.PatientIdentityConsumer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * description = "CapabilityStatement for Patient Identity Consumer Actor in the IHE IT Infrastructure Technical Framework Supplement [IHE PMIR](index.html)."
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Patient Identity Consumer Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/PMIR/index.html\">PMIR</a>\r\n</div>"
+//* text.status = #additional
+//* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Patient Identity Consumer Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/PMIR/index.html\">PMIR</a>\r\n</div>"
 * name = "IHE_PMIR_PatientIdentityConsumer"
 * title = "IHE PMIR Patient Identity Consumer"
 * status = #active
@@ -62,8 +62,8 @@ Instance: IHE.PMIR.PatientIdentitySubscriber
 InstanceOf: CapabilityStatement
 Usage: #definition
 * description = "CapabilityStatement for Patient Identity Subscriber Actor in the IHE IT Infrastructure Technical Framework Supplement [IHE PMIR](index.html)."
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Patient Identity Subscriber Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/PMIR/index.html\">PMIR</a>\r\n</div>"
+//* text.status = #additional
+//* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Patient Identity Subscriber Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/PMIR/index.html\">PMIR</a>\r\n</div>"
 * name = "IHE_PMIR_PatientIdentitySubscriber"
 * title = "IHE PMIR Patient Identity Subscriber"
 * status = #active
@@ -102,8 +102,8 @@ Instance: IHE.PMIR.PatientIdentityRegistry
 InstanceOf: CapabilityStatement
 Usage: #definition
 * description = "CapabilityStatement for the Patient Identity Registry Actor in the IHE IT Infrastructure Technical Framework Supplement [IHE PMIR](index.html)."
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Patient Identity Registry Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/PMIR/index.html\">PMIR</a>\r\n</div>"
+//* text.status = #additional
+//* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\tCapabilityStatement for Patient Identity Registry Actor in the IHE IT Infrastructure Technical Framework Supplement\r\n\t\t\t<a href=\"https://profiles.ihe.net/ITI/PMIR/index.html\">PMIR</a>\r\n</div>"
 * name = "IHE_PMIR_PatientIdentityRegistry"
 * title = "IHE PMIR Patient Identity Registry"
 * status = #active
