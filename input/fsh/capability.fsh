@@ -57,8 +57,7 @@ Usage: #definition
   * mode = #client
   * documentation = "PMIR Patient Identity Subscriber will create, update, or deleate Subscription resources."
   * security
-    * cors = false
-    * description = "None mandated by IHE, encouraged IHE-IUA or SMART-on-FHIR"
+    * description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or SMART-on-FHIR"
   * resource[+]
     * type = #Subscription
     * supportedProfile = "https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Subscription.Request"
@@ -88,8 +87,7 @@ Usage: #definition
   * mode = #server
   * documentation = "PMIR Patient Identity Registry provides capability to manage Master Patient Identity."
   * security
-    * cors = false
-    * description = "None mandated by IHE, encouraged IHE-IUA or SMART-on-FHIR"
+    * description = "Recommend [ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html), encouraged [IHE-IUA](https://profiles.ihe.net/ITI/IUA/index.html) or SMART-on-FHIR"
   * resource[+]
     * type = #Subscription
     * supportedProfile = "https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Subscription.Request"
