@@ -29,7 +29,8 @@ jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 copyrightYear: 2022+
 dependencies:
   ihe.iti.balp: current # 1.1.1
-
+  ihe.iti.pdqm: 3.0.0
+  ihe.iti.pixm: 3.0.4
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:

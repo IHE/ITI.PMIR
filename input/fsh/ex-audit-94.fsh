@@ -6,6 +6,7 @@ AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Subsc
 when creating a Subscription.
 """
 Usage:        #example
+* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
 * subtype[anyCreate] = http://hl7.org/fhir/restful-interaction#create "create"
 * subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#C
@@ -38,6 +39,7 @@ Usage:        #example
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what = Reference(Patient/ex-patient-create1)
 * entity[data]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"
   * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what = Reference(Subscription/ex-subscription)
   * query = "UGF0aWVudD9faWQ9ZXgtcGF0aWVudA=="
@@ -50,6 +52,7 @@ Description:  """
 AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Registry to create a Subscription.
 """
 Usage:        #example
+* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
 * subtype[anyCreate] = http://hl7.org/fhir/restful-interaction#create "create"
 * subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#C
@@ -82,6 +85,7 @@ Usage:        #example
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what = Reference(Patient/ex-patient-create1)
 * entity[data]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"
   * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what = Reference(Subscription/ex-subscription)
   * query = "UGF0aWVudD9faWQ9ZXgtcGF0aWVudA=="
@@ -95,6 +99,7 @@ AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Subsc
 when reading a Subscription.
 """
 Usage:        #example
+* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
 * subtype[anyRead] = http://hl7.org/fhir/restful-interaction#read "read"
 * subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#R
@@ -127,6 +132,7 @@ Usage:        #example
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what = Reference(Patient/ex-patient-create1)
 * entity[data]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"
   * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what = Reference(Subscription/ex-subscription)
   * query = "UGF0aWVudD9faWQ9ZXgtcGF0aWVudA=="
@@ -139,6 +145,7 @@ Description:  """
 AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Registry to read a Subscription.
 """
 Usage:        #example
+* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
 * subtype[anyRead] = http://hl7.org/fhir/restful-interaction#read "read"
 * subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#R
@@ -171,6 +178,7 @@ Usage:        #example
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what = Reference(Patient/ex-patient-create1)
 * entity[data]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"
   * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what = Reference(Subscription/ex-subscription)
   * query = "UGF0aWVudD9faWQ9ZXgtcGF0aWVudA=="
@@ -184,6 +192,7 @@ AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Subsc
 when updating a Subscription.
 """
 Usage:        #example
+* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
 * subtype[anyUpdate] = http://hl7.org/fhir/restful-interaction#update "update"
 * subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#U
@@ -216,6 +225,7 @@ Usage:        #example
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what = Reference(Patient/ex-patient-create1)
 * entity[data]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"
   * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what = Reference(Subscription/ex-subscription)
   * query = "UGF0aWVudD9faWQ9ZXgtcGF0aWVudA=="
@@ -228,6 +238,7 @@ Description:  """
 AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Registry to update a Subscription.
 """
 Usage:        #example
+* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
 * subtype[anyUpdate] = http://hl7.org/fhir/restful-interaction#update "update"
 * subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#U
@@ -260,6 +271,7 @@ Usage:        #example
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what = Reference(Patient/ex-patient-create1)
 * entity[data]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"
   * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what = Reference(Subscription/ex-subscription)
   * query = "UGF0aWVudD9faWQ9ZXgtcGF0aWVudA=="
@@ -275,6 +287,7 @@ AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Subsc
 when deleting a Subscription.
 """
 Usage:        #example
+* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
 * subtype[anyDelete] = http://hl7.org/fhir/restful-interaction#delete "delete"
 * subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#D
@@ -307,6 +320,7 @@ Usage:        #example
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what = Reference(Patient/ex-patient-create1)
 * entity[data]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"
   * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what = Reference(Subscription/ex-subscription)
   * query = "UGF0aWVudD9faWQ9ZXgtcGF0aWVudA=="
@@ -319,6 +333,7 @@ Description:  """
 AuditEvent for the PMIR Subscribe to Patient Updates by a Patient Identity Registry to delete a Subscription.
 """
 Usage:        #example
+* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
 * subtype[anyDelete] = http://hl7.org/fhir/restful-interaction#delete "delete"
 * subtype[iti94] = urn:ihe:event-type-code#ITI-94 "Subscribe to Patient Updates"
 * action = http://hl7.org/fhir/audit-event-action#D
@@ -351,6 +366,7 @@ Usage:        #example
   * role = http://terminology.hl7.org/CodeSystem/object-role#1 "Patient"
   * what = Reference(Patient/ex-patient-create1)
 * entity[data]
+  * type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"
   * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what = Reference(Subscription/ex-subscription)
   * query = "UGF0aWVudD9faWQ9ZXgtcGF0aWVudA=="

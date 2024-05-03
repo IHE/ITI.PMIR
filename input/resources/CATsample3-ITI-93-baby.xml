@@ -11,6 +11,7 @@
     <fullUrl value="http://proxy:11254/PatientIdentityManager/fhir/MessageHeader/76354729-8458-434c-ace5-007e6ff32464"/>
     <resource>
       <MessageHeader xmlns="http://hl7.org/fhir">
+        <id value="76354729-8458-434c-ace5-007e6ff32464"/>
         <meta>
           <profile value="https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.MessageHeader"/>
         </meta>
@@ -35,7 +36,7 @@
           <endpoint value="urn:oid:1.3.6.1.4.1.21367.13.10.345"/>
         </source>
         <focus>
-          <reference value="Bundle/76354729-8458-434c-ace5-007e6ff32464"/>
+          <reference value="http://proxy:11254/PatientIdentityManager/fhir/Bundle/76354729-8458-434c-ace5-007e6ff32464"/>
         </focus>
       </MessageHeader>
     </resource>
@@ -53,6 +54,10 @@
           <fullUrl value="urn:uuid:cb80f151-8209-46b8-87e8-b0c20186b654"/>
           <resource>
             <Patient xmlns="http://hl7.org/fhir">
+              <text>
+                <status value="additional"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">Connectathon Example Patient</div>
+              </text>
               <identifier>
                 <system value="urn:oid:1.3.6.1.4.1.21367.13.20.308"/>
                 <value value="Child"/>
