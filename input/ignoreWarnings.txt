@@ -1,8 +1,18 @@
 == Suppressed Messages ==
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
 # IHE valueset that is not yet a real valueset
-Code System URI 'urn:ihe:event-type-code' is unknown so the code cannot be validated
+A definition for CodeSystem 'urn:ihe:event-type-code' could not be found, so the code cannot be validated
 
 # additional codes on auditEvent.subtype are okay
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
+# Using draft codesystems
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/object-role|1.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/audit-entity-type|1.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0
+
+# Using fixed value for constraint
+For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+
+# This is expected as the eventUri is defined by PMIR
+Can't find 'urn:ihe:iti:pmir:2019:patient-feed' in the bundle (Bundle.entry[0].resource.event[x])

@@ -18,13 +18,13 @@
           <code value="ok"/>
         </response>
         <focus>
-          <reference value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Patient/8f33f71d-497c-eb11-95e7-d067e54cbc0c"/>
+          <reference value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Bundle/8f52a376-d6d2-46ab-a810-c4233bd46c69"/>
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Patient/8f33f71d-497c-eb11-95e7-d067e54cbc0c"/>
+    <fullUrl value="http://172-223-006-088.res.spectrum.com:18035/PatientIdentityManager/fhir/Bundle/8f52a376-d6d2-46ab-a810-c4233bd46c69"/>
     <resource>
       <Bundle>
         <id value="8f52a376-d6d2-46ab-a810-c4233bd46c69"/>
@@ -38,6 +38,10 @@
               <meta>
                 <lastUpdated value="2021-03-03T12:51:45.173-05:00"/>
               </meta>
+              <text>
+                <status value="additional"/>
+                <div xmlns="http://www.w3.org/1999/xhtml">Connectathon Example Patient</div>
+              </text>
               <identifier>
                 <use value="usual"/>
                 <system value="urn:oid:1.3.6.1.4.1.21367.13.20.308"/>

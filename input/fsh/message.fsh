@@ -18,11 +18,11 @@ Usage:            #definition
 * category = #notification
 * focus
   * code = #Bundle
-  * profile = "https://profiles.ihe.net/ITI/PMIR/StructureDefintion/IHE.PMIR.Bundle.History"
+  * profile = Canonical(IHE.PMIR.Bundle.History)
   * min = 1
   * max = "1"
 * responseRequired = #always
-* allowedResponse.message = "https://profiles.ihe.net/ITI/PMIR/StructureDefintion/IHE.PMIR.MessageDefinition.Response"
+* allowedResponse.message = Canonical(IHE.PMIR.MessageDefinition.Response)
 
 Instance:         IHE.PMIR.MessageDefinition.Response
 InstanceOf:       MessageDefinition
@@ -81,7 +81,7 @@ Description:      "StructureDefinition for MessageHeader resource constraints in
 * author ^requirements = "Required if known"
 * responsible MS
 * responsible ^requirements = "Required if known"
-* definition = "https://profiles.ihe.net/ITI/PMIR/StructureDefintion/IHE.PMIR.MessageDefinition"
+* definition = Canonical(IHE.PMIR.MessageDefinition)
 
 Profile:          PMIRMessageHeaderResponse
 Parent:           MessageHeader
@@ -92,4 +92,4 @@ Description:      "StructureDefinition for the PMIR MessageHeader response const
 * eventUri = "urn:ihe:iti:pmir:2019:patient-feed-response"
 * destination 0..0
 * response 1..1
-* definition = "https://profiles.ihe.net/ITI/PMIR/StructureDefintion/IHE.PMIR.MessageDefinition.Response"
+* definition = Canonical(IHE.PMIR.MessageDefinition.Response)

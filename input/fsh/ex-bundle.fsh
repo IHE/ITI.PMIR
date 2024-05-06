@@ -5,10 +5,10 @@ Description:      "IHE PMIR example Bundle for a patient that has been merged."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
-  * fullUrl = "MessageHeader/ex-messageheader-merge"
+  * fullUrl = Canonical(ex-messageheader-merge)
   * resource = ex-messageheader-merge
 * entry[PMIRBundleHistoryEntry]
-  * fullUrl = "Bundle/ex-bundle-history-merge"
+  * fullUrl = Canonical(ex-bundle-history-merge)
   * resource = ex-bundle-history-merge
 
 
@@ -20,7 +20,7 @@ Usage:            #example
 * id = "ex-bundle-history-merge"
 * type = #history
 * entry[PMIREntryUpdate]
-  * fullUrl = "http://example.com/fhir/Patient/123"
+  * fullUrl = Canonical(ex-patient-merge)
   * resource = ex-patient-merge
   * request
     * method = #PUT
@@ -45,6 +45,9 @@ Title:            "PMIR example Patient for merge"
 Description:      "Example PMIR Patient for merging."
 Usage:            #example
 * id = "ex-patient-merge"
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example PMIR Patient for merging</div>"
 * active = false
 * link.other = Reference(Patient/ex-patient-merged)
 * link.type = #replaced-by
@@ -55,6 +58,9 @@ Title:            "PMIR example Patient for merge"
 Description:      "Example PMIR Patient for merging."
 Usage:            #example
 * id = "ex-patient-merged"
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example PMIR Patient for mergin</div>"
 * active = true
 
 Instance:         ex-PMIRBundleCreate
@@ -64,10 +70,10 @@ Description:      "IHE PMIR example to create two patients."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
-  * fullUrl = "MessageHeader/ex-messageheader-create"
+  * fullUrl = Canonical(ex-messageheader-create)
   * resource = ex-messageheader-create
 * entry[PMIRBundleHistoryEntry]
-  * fullUrl = "Bundle/ex-bundle-history-create"
+  * fullUrl = Canonical(ex-bundle-history-create)
   * resource = ex-bundle-history-create
 
 
@@ -126,6 +132,9 @@ Title:            "PMIR example Patient for create"
 Description:      "Example PMIR Patient for creating."
 Usage:            #example
 * active = true
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example PMIR Patient for creating</div>"
 * name
   * use = #official
   * family = "Riegel"
@@ -157,6 +166,9 @@ Title:            "PMIR example Patient for create"
 Description:      "Example PMIR Patient for creating."
 Usage:            #example
 * active = true
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example PMIR Patient for creating</div>"
 * name
   * use = #official
   * family = "Wooten"
@@ -212,10 +224,10 @@ Description:      "IHE PMIR example to update a patient."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
-  * fullUrl = "MessageHeader/ex-messageheader-update"
+  * fullUrl = Canonical(ex-messageheader-update)
   * resource = ex-messageheader-update
 * entry[PMIRBundleHistoryEntry]
-  * fullUrl = "Bundle/ex-bundle-history-update"
+  * fullUrl = Canonical(ex-bundle-history-update)
   * resource = ex-bundle-history-update
 
 Instance:         ex-bundle-history-update 
@@ -252,6 +264,9 @@ Title:            "PMIR example Patient for update"
 Description:      "Example PMIR Patient for updating."
 Usage:            #example
 * id = "ex-patient-update"
+* text
+  * status = #additional
+  * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example PMIR Patient for updating</div>"
 * active = true
 * name
   * use = #official
@@ -286,10 +301,10 @@ Description:      "IHE PMIR example to delete a patient."
 Usage:            #example
 * type = #message
 * entry[PMIRMessageHeaderEntry]
-  * fullUrl = "MessageHeader/ex-messageheader-delete"
+  * fullUrl = Canonical(ex-messageheader-delete)
   * resource = ex-messageheader-delete
 * entry[PMIRBundleHistoryEntry]
-  * fullUrl = "Bundle/ex-bundle-history-delete"
+  * fullUrl = Canonical(ex-bundle-history-delete)
   * resource = ex-bundle-history-delete
 
 
@@ -301,7 +316,7 @@ Usage:            #example
 * id = "ex-bundle-history-delete"
 * type = #history
 * entry[PMIREntryDelete]
-  * fullUrl = "Patient/ex-patient-delete"
+  * fullUrl = "https://example.org/FHIR/Patient/ex-patient-delete"
   * request
     * method = #DELETE
     * url = "Patient/ex-patient-delete"
