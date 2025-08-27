@@ -42,7 +42,7 @@ A patient’s “Patient Master Identity” contains:
 
 - zero or more business identifiers for the patient, e.g., local patient ID(s), driver’s license number, etc. (`Patient.identifier` in the FHIR Patient Resource).
 
-- other information to identify the patient in the FHIR Patient Resource.
+- other information to identify the patient in the PDQm Patient resource profile.
 
 **Note:** The Consumer is identified either by a subscription in the [Subscribe to Patient Updates \[ITI-94\]](ITI-94.html) transaction or by a configuration.
 
