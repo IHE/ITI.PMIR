@@ -6,13 +6,15 @@ A definition for CodeSystem 'urn:ihe:event-type-code' could not be found, so the
 # additional codes on auditEvent.subtype are okay
 The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
-# Using draft codesystems
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/object-role|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/audit-entity-type|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0
+# This is expected as a defined URI for PMIR
+No definition could be found for URL value 'urn:ihe:iti:pmir:2019:patient-feed'
 
-# Using fixed value for constraint
-For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+# inherited info from fhir core, nothing can be done
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 
-# This is expected as the eventUri is defined by PMIR
-Can't find 'urn:ihe:iti:pmir:2019:patient-feed' in the bundle (Bundle.entry[0].resource.event[x])
+# Pinned version is the right PIN_VERSION
+PIN_VERSION
+
+# Examples have many warnings, but they are all as good as they can get 
+Type_Specific_Checks_DT_URL_Resolve
+Bundle_BUNDLE_Entry_NotFound

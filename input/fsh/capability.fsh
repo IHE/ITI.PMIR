@@ -17,7 +17,7 @@ For Mobile Patient Identity Feed [ITI-93]
 """
   * supportedMessage
     * mode = #sender
-    * definition = "https://profiles.ihe.net/ITI/PMIR/StructureDefintion/IHE.PMIR.MessageDefinition"
+    * definition = "https://profiles.ihe.net/ITI/PMIR/MessageDefinition/IHE.PMIR.MessageDefinition"
 
 Instance: IHE.PMIR.PatientIdentityConsumer
 InstanceOf: CapabilityStatement
@@ -38,7 +38,7 @@ For Mobile Patient Identity Feed [ITI-93]
 """
   * supportedMessage
     * mode = #receiver
-    * definition = "https://profiles.ihe.net/ITI/PMIR/StructureDefintion/IHE.PMIR.MessageDefinition"
+    * definition = "https://profiles.ihe.net/ITI/PMIR/MessageDefinition/IHE.PMIR.MessageDefinition"
 
 Instance: IHE.PMIR.PatientIdentitySubscriber
 InstanceOf: CapabilityStatement
@@ -165,7 +165,7 @@ and Mobile Patient Demographics Query [ITI-78]
       * documentation = "Mother's maiden (unmarried) name, commonly collected to help verify patient identity."
     * operation[+]
       * name = "$ihe-pix"
-      * definition = "https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE_PIXm_pix"
+      * definition = "https://profiles.ihe.net/ITI/PIXm/OperationDefinition/IHE.PIXm.pix"
   * interaction.code = #search-system
 * messaging[+]
   * documentation = """
@@ -173,11 +173,11 @@ For Mobile Patient Identity Feed [ITI-93]
 """
   * supportedMessage
     * mode = #sender
-    * definition = "https://profiles.ihe.net/ITI/PMIR/StructureDefintion/IHE.PMIR.MessageDefinition"
+    * definition = "https://profiles.ihe.net/ITI/PMIR/MessageDefinition/IHE.PMIR.MessageDefinition"
 * messaging[+]
   * documentation = """
 For Mobile Patient Identity Feed [ITI-93]
 """
   * supportedMessage
     * mode = #receiver
-    * definition = "https://profiles.ihe.net/ITI/PMIR/StructureDefintion/IHE.PMIR.MessageDefinition"
+    * definition = "https://profiles.ihe.net/ITI/PMIR/MessageDefinition/IHE.PMIR.MessageDefinition"

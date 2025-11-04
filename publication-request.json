@@ -1,0 +1,14 @@
+{
+    "package-id" : "ihe.iti.pmir",
+    "version" : "1.6.0",
+    "path" : "https://profiles.ihe.net/ITI/PMIR/1.6.0",
+    "mode" : "milestone",
+    "status" : "trial-use",
+    "sequence" : "Publication",
+    "desc" : "PMIR Version 1.6.0 updated include Gender Harmony.",
+    "descmd" : "PMIR Version 1.6.0
+- QA fixes
+- CP-ITI-1297 - Sex and Gender Representation",
+    "changes" : "issues.html",
+    "first" : false
+  }

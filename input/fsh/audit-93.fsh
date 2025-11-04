@@ -13,7 +13,7 @@ Defines constraints on the AuditEvent Resource to record when a Mobile Patient I
 * outcome 1..1
 * outcomeDesc MS
 * agent 2..*
-* agent ^slicing.discriminator.type = #pattern
+* agent ^slicing.discriminator.type = #value
 * agent ^slicing.discriminator.path = "type"
 * agent ^slicing.rules = #open
 * agent contains source 1..1 and destination 1..1
@@ -32,7 +32,7 @@ Defines constraints on the AuditEvent Resource to record when a Mobile Patient I
     * address 1..1
     * type 1..1
 * entity 1..*
-* entity ^slicing.discriminator.type = #pattern
+* entity ^slicing.discriminator.type = #value
 * entity ^slicing.discriminator.path = "type"
 * entity ^slicing.rules = #closed
 * entity contains patient 1..* and message 1..1

@@ -1,4 +1,11 @@
-## Significant changes from PMIR, Rev 1.3
+## Significant changes 
+
+### In Version 1.6.0
+
+- QA fixes
+- CP-ITI-1297 - Sex and Gender Representation
+
+### In Version 1.5.0
 
 - Removed inline UML text and moved it to images-source
 - Removed constraint tables for link to profiled resource page
